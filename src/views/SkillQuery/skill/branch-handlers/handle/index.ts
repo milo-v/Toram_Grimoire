@@ -225,9 +225,9 @@ function handleDisplayData<Branch extends SkillBranchItemBaseChilds>(
     delete langDatas[key]
   })
 
-  const valueDatas = handleBranchValueProps(helper, props, values)
-  const textDatas = handleBranchTextProps(helper, props, texts)
-  const statDatas = handleBranchStats(helper, branchItem.stats)
+  const valueContainers = handleBranchValueProps(helper, props, values)
+  const textContainers = handleBranchTextProps(helper, props, texts)
+  const statContainers = handleBranchStats(helper, branchItem.stats)
 
   const titlesResult: SkillDisplayData = new Map()
 
@@ -283,13 +283,13 @@ function handleDisplayData<Branch extends SkillBranchItemBaseChilds>(
         }
       : (_stat: StatComputed, value: string) => value
 
-  Object.values(valueDatas).forEach(container => {
+  Object.values(valueContainers).forEach(container => {
     handleContainerFormulaValue(container)
     container.handleDisplay(str => handleFunctionHighlight(str))
     handlePropHistoryHighlight(container)
   })
 
-  Object.values(textDatas).forEach(container => {
+  Object.values(textContainers).forEach(container => {
     handleContainerFormulaValue(container)
 
     container.containers.forEach(ctner => {
@@ -302,7 +302,7 @@ function handleDisplayData<Branch extends SkillBranchItemBaseChilds>(
     handlePropHistoryHighlight(container)
   })
 
-  statDatas.forEach(container => {
+  statContainers.forEach(container => {
     handleContainerFormulaValue(container)
     container.handle(value => handleStatHistoryHighlight(container.stat, value))
     container.handleDisplay(value => handleFunctionHighlight(value))
@@ -319,8 +319,8 @@ function handleDisplayData<Branch extends SkillBranchItemBaseChilds>(
   })
 
   const containers = new Map([
-    ...Object.entries(valueDatas),
-    ...Object.entries(textDatas),
+    ...Object.entries(valueContainers),
+    ...Object.entries(textContainers),
     ...Object.entries(langDatas),
   ] as [string, SkillBranchResult][])
 
@@ -359,7 +359,7 @@ function handleDisplayData<Branch extends SkillBranchItemBaseChilds>(
     branchItem,
     containers,
     titles: titlesResult,
-    statContainers: statDatas,
+    statContainers: statContainers,
   })
 }
 

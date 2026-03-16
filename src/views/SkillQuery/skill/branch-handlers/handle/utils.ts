@@ -2,29 +2,33 @@ import { lastElement } from '@/shared/utils/array'
 import { numberToFixed } from '@/shared/utils/number'
 
 export function handleFunctionHighlight(result: string): string {
-  const functionPattern = /Math\.(floor|min|max)\(([^()]+)\)/g
+  const FUNCTION_PATTERN = /Math\.(floor|min|max)\(([^()]+)\)/g
 
-  if (!result.match(functionPattern)) {
+  if (!result.match(/Math\.(?:floor|min|max)/)) {
     return result
   }
 
+  const START = '<#--'
+  const END = '--#>'
+  const REPLACE_OFFSET = 3 // START/END length - 1 (Since START/END will replace one char)
+
   const handleStack: ('normal' | 'function')[] = []
-  let offset = 0 // offset for "<#--" and "--#>"
+  let offset = 0 // offset for START/END
 
   const varCharPattern = /[_a-zA-Z0-9]/
   result.split('').forEach((char, idx) => {
     if (char === '(') {
       if (idx === 0 || !varCharPattern.test(result[idx - 1 + offset])) {
-        result = result.slice(0, idx + offset) + '<#--' + result.slice(idx + offset + 1)
-        offset += 4
+        result = result.slice(0, idx + offset) + START + result.slice(idx + offset + 1)
+        offset += REPLACE_OFFSET
         handleStack.push('normal')
       } else {
         handleStack.push('function')
       }
     } else if (char === ')') {
       if (lastElement(handleStack) === 'normal') {
-        result = result.slice(0, idx + offset) + '--#>' + result.slice(idx + offset + 1)
-        offset += 4
+        result = result.slice(0, idx + offset) + END + result.slice(idx + offset + 1)
+        offset += REPLACE_OFFSET
       }
       handleStack.pop()
     }
@@ -37,13 +41,16 @@ export function handleFunctionHighlight(result: string): string {
     return `<span class="skill-formula-function-wrapper key--${name}"><span class="name">${name.toUpperCase()}</span><span class="value">${params}</span></span>`
   }
 
-  while (result.match(functionPattern)) {
-    result = result.replace(functionPattern, (_match, funcName, params) =>
+  while (result.match(FUNCTION_PATTERN)) {
+    result = result.replace(FUNCTION_PATTERN, (_match, funcName, params) =>
       createFormulaText(funcName, params)
     )
   }
 
-  result = result.replace(/<#--/g, '(').replace(/--#>/g, ')')
+  const START_PATTERN = new RegExp(START, 'g')
+  const END_PATTERN = new RegExp(END, 'g')
+
+  result = result.replace(START_PATTERN, '(').replace(END_PATTERN, ')')
 
   result = result.replace(/,/g, '<span class="param-separate"></span>')
 

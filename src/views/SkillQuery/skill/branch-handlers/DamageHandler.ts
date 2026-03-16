@@ -132,7 +132,5 @@ export default function DamageHandler<BranchItem extends SkillBranchItem>(
     pureDatas,
   })
 
-  // result.value['@frequency-visible'] = branchItem.props['title'] === 'each' ? '1' : '0';
-
   return result
 }

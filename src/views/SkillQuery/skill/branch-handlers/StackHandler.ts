@@ -3,6 +3,7 @@ import { toInt } from '@/shared/utils/number'
 
 import { SkillBranchNames } from '@/lib/Skill/Skill'
 import { SkillBranchItem, SkillComputingContainer } from '@/lib/Skill/SkillComputing'
+import type { HandleBranchValuePropsMap } from '@/lib/Skill/SkillComputing/compute'
 
 import { type HandleDisplayDataOptionFilters, cloneBranchProps, handleDisplayData } from './handle'
 import MapContainer from './handle/MapContainer'
@@ -27,10 +28,12 @@ export default function StackHandler<BranchItem extends SkillBranchItem>(
   const filters = new MapContainer<HandleDisplayDataOptionFilters>({
     max: value => !!value,
   })
-  const pureValues = ['min', 'max', 'default', 'step']
+  const valuePropsMap = new MapContainer<HandleBranchValuePropsMap>(['min', 'max'])
+  const pureValues = ['default', 'step']
   const pureDatas = ['name', 'unit']
 
   const displayData = handleDisplayData(computing, branchItem, props, {
+    values: valuePropsMap.value,
     filters: filters.value,
     pureValues,
     pureDatas,
