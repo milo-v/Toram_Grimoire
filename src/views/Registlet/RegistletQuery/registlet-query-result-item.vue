@@ -2,7 +2,7 @@
   <CardRow :selected="detailVisible">
     <div class="z-1 sticky top-0 min-w-max">
       <div
-        class="flex cursor-pointer items-center px-3.5 py-2.5 duration-150 hover:bg-primary-5"
+        class="hover:bg-primary-5 flex cursor-pointer items-center px-3.5 py-2.5 duration-150"
         :class="{ 'bg-white': detailVisible }"
         @click="detailVisible = !detailVisible"
       >
@@ -22,7 +22,7 @@
             <div
               v-for="level in item.obtainLevels"
               :key="level"
-              class="rounded-sm bg-emerald-5 px-2 text-emerald-60"
+              class="bg-emerald-5 text-emerald-60 rounded-sm px-2"
             >
               {{ level }}
             </div>
@@ -35,19 +35,19 @@
     </div>
     <cy-transition>
       <div v-if="detailVisible" class="max-w-full bg-white pb-3 pl-4 pr-3 pt-1.5">
-        <div class="mb-2 mt-1 rounded-sm border border-l-4 border-red-10 px-4 py-3">
+        <div class="border-red-10 mb-2 mt-1 rounded-sm border border-l-4 px-4 py-3">
           <!-- prettier-ignore-attribute v-if -->
           <div v-if="(item.link instanceof StatBase)" class="flex items-center">
             <div>{{ item.link.text }}</div>
             <div>+</div>
-            <div class="ml-2 border-x border-primary-20 px-2 text-primary-60">
+            <div class="border-primary-20 text-primary-60 ml-2 border-x px-2">
               {{ handleValue(item.rows[0].value) }}
             </div>
           </div>
           <div v-else class="space-y-2">
             <template v-for="row in item.rows" :key="row.type + row.value">
               <RenderCaptionValue v-if="row.type === 'caption'" :text="row.value" />
-              <div v-else-if="row.type === 'remark'" class="text-sm text-primary-40">
+              <div v-else-if="row.type === 'remark'" class="text-primary-40 text-sm">
                 {{ row.value }}
               </div>
             </template>
@@ -56,7 +56,7 @@
         <div>
           <table class="border-separate border-spacing-x-4 border-spacing-y-2">
             <tr>
-              <td class="text-right text-sm text-stone-40">
+              <td class="text-gray-40 text-right text-sm">
                 {{ t('registlet-query.detail.obtain-levels') }}
               </td>
               <td class="text-primary-60">
@@ -64,7 +64,7 @@
                   <div
                     v-for="level in item.obtainLevels"
                     :key="level"
-                    class="rounded-sm bg-emerald-5 px-2 text-emerald-60"
+                    class="bg-emerald-5 text-emerald-60 rounded-sm px-2"
                   >
                     {{ level }}
                   </div>
@@ -75,7 +75,7 @@
               </td>
             </tr>
             <tr>
-              <td class="text-right text-sm text-stone-40">
+              <td class="text-gray-40 text-right text-sm">
                 {{ t('registlet-query.detail.max-level') }}
               </td>
               <td class="text-primary-60">
@@ -83,12 +83,12 @@
               </td>
             </tr>
             <tr>
-              <td class="text-right text-sm text-stone-40">
+              <td class="text-gray-40 text-right text-sm">
                 {{ t('registlet-query.detail.powder-cost') }}
               </td>
               <td class="text-primary-60">
                 <span>{{ item.powderCost }}</span>
-                <span class="ml-3 text-blue-40">
+                <span class="text-blue-40 ml-3">
                   {{ `(${item.powderCostAdditional})` }}
                 </span>
               </td>

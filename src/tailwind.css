@@ -3,7 +3,7 @@
 @source "../src";
 @source "./index.html";
 
-@source inline("{text,bg,border,}-{primary,fuchsia,violet,blue,cyan,orange,emerald,red,gray,stone,}-{5,{10..90..10}}");
+@source inline("{text,bg,border,}-{primary,fuchsia,violet,blue,cyan,orange,emerald,red,gray,}-{5,{10..90..10}}");
 
 @theme {
   --font-mono:
@@ -96,16 +96,6 @@
   --color-gray-70: var(--app-gray-70);
   --color-gray-80: var(--app-gray-80);
   --color-gray-90: var(--app-gray-90);
-  --color-stone-5: var(--app-stone-5);
-  --color-stone-10: var(--app-stone-10);
-  --color-stone-20: var(--app-stone-20);
-  --color-stone-30: var(--app-stone-30);
-  --color-stone-40: var(--app-stone-40);
-  --color-stone-50: var(--app-stone-50);
-  --color-stone-60: var(--app-stone-60);
-  --color-stone-70: var(--app-stone-70);
-  --color-stone-80: var(--app-stone-80);
-  --color-stone-90: var(--app-stone-90);
   --color-primary-5: var(--app-primary-5);
   --color-primary-10: var(--app-primary-10);
   --color-primary-20: var(--app-primary-20);

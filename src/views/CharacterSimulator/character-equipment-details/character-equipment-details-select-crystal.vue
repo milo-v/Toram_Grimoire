@@ -197,7 +197,7 @@ const currentEquipmentRelatedCrystals = computed(() => {
       </div>
       <div class="grow space-y-3 overflow-y-auto py-2">
         <div v-for="category in currentCrystalCategorys" :key="category.id">
-          <div class="text-stone-60 pb-2 pl-3 text-sm">{{ category.title }}</div>
+          <div class="text-gray-60 pb-2 pl-3 text-sm">{{ category.title }}</div>
           <CardRowsDelegation @row-clicked="toggleCrystal">
             <CharacterEquipmentDetailsSelectCrystalOption
               v-for="option in category.crystals"

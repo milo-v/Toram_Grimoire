@@ -217,63 +217,33 @@
       "value": "#8b0836"
     },
     "gray-5": {
-      "value": "#f9fafb"
-    },
-    "gray-10": {
-      "value": "#f3f4f6"
-    },
-    "gray-20": {
-      "value": "#e5e7eb"
-    },
-    "gray-30": {
-      "value": "#d1d5dc"
-    },
-    "gray-40": {
-      "value": "#99a1af"
-    },
-    "gray-50": {
-      "value": "#6a7282"
-    },
-    "gray-60": {
-      "value": "#4a5565"
-    },
-    "gray-70": {
-      "value": "#364153"
-    },
-    "gray-80": {
-      "value": "#1e2939"
-    },
-    "gray-90": {
-      "value": "#101828"
-    },
-    "stone-5": {
       "value": "#f8fafc"
     },
-    "stone-10": {
+    "gray-10": {
       "value": "#f1f5f9"
     },
-    "stone-20": {
+    "gray-20": {
       "value": "#e2e8f0"
     },
-    "stone-30": {
+    "gray-30": {
       "value": "#cad5e2"
     },
-    "stone-40": {
+    "gray-40": {
       "value": "#90a1b9"
     },
-    "stone-50": {
+    "gray-50": {
       "value": "#62748e"
     },
-    "stone-60": {
+    "gray-60": {
       "value": "#45556c"
     },
-    "stone-70": {
+    "gray-70": {
       "value": "#314158"
     },
-    "stone-80": {
+    "gray-80": {
       "value": "#1d293d"
     },
-    "stone-90": {
+    "gray-90": {
       "value": "#0f172b"
     },
     "primary-5": {
@@ -525,63 +495,33 @@
       "value": "#fffcfc"
     },
     "gray-5": {
-      "value": "#0e1116"
-    },
-    "gray-10": {
-      "value": "#252a32"
-    },
-    "gray-20": {
-      "value": "#474d57"
-    },
-    "gray-30": {
-      "value": "#646a74"
-    },
-    "gray-40": {
-      "value": "#909399"
-    },
-    "gray-50": {
-      "value": "#cacccf"
-    },
-    "gray-60": {
-      "value": "#eaeaec"
-    },
-    "gray-70": {
-      "value": "#f4f5f5"
-    },
-    "gray-80": {
-      "value": "#fcfcfc"
-    },
-    "gray-90": {
-      "value": "#fcfdfd"
-    },
-    "stone-5": {
       "value": "#0e1117"
     },
-    "stone-10": {
+    "gray-10": {
       "value": "#252b35"
     },
-    "stone-20": {
+    "gray-20": {
       "value": "#444d59"
     },
-    "stone-30": {
+    "gray-30": {
       "value": "#626b78"
     },
-    "stone-40": {
+    "gray-40": {
       "value": "#8e959f"
     },
-    "stone-50": {
+    "gray-50": {
       "value": "#c8ccd3"
     },
-    "stone-60": {
+    "gray-60": {
       "value": "#eaedf0"
     },
-    "stone-70": {
+    "gray-70": {
       "value": "#f4f6f7"
     },
-    "stone-80": {
+    "gray-80": {
       "value": "#f9fafb"
     },
-    "stone-90": {
+    "gray-90": {
       "value": "#fcfdfd"
     },
     "primary-5": {

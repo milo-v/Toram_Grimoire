@@ -26,7 +26,7 @@ const { t } = useI18n()
       />
     </div>
     <div v-if="equipment.customTypeList">
-      <div class="text-stone-60 px-1.5 text-sm">
+      <div class="text-gray-60 px-1.5 text-sm">
         {{ t('character-simulator.equipment-basic-editor.equipment-type') }}
       </div>
       <cy-button-radio-group

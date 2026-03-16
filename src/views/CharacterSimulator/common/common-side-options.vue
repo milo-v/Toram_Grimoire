@@ -29,10 +29,10 @@ const moveMode = ref(false)
 </script>
 
 <template>
-  <div class="hidden w-72 shrink-0 space-y-0.5 pr-8 wd-lg:block">
+  <div class="wd-lg:block hidden w-72 shrink-0 space-y-0.5 pr-8">
     <div
       v-if="addable || movable"
-      class="mb-3 flex justify-end border-b border-primary-10 pb-1 pt-1"
+      class="border-primary-10 mb-3 flex justify-end border-b pb-1 pt-1"
     >
       <cy-button-icon
         v-if="movable"
@@ -51,7 +51,7 @@ const moveMode = ref(false)
         v-for="option in options"
         :key="option.id"
         class="flex w-full cursor-pointer items-center rounded-r-md px-4 py-2.5"
-        :class="option === innerValue ? 'bg-primary-5/75 text-primary-80' : 'text-stone-60'"
+        :class="option === innerValue ? 'bg-primary-5/75 text-primary-80' : 'text-gray-60'"
         @click="innerValue = option"
       >
         <cy-icon
@@ -66,7 +66,7 @@ const moveMode = ref(false)
       </div>
     </template>
     <template v-else>
-      <div class="text-right text-sm text-primary-30">
+      <div class="text-primary-30 text-right text-sm">
         {{ t('character-simulator.build-common.move-tips') }}
       </div>
       <Draggable v-model="options" item-key="id">

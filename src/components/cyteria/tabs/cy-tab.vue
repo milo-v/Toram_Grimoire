@@ -105,7 +105,7 @@ const tabClicked = () => {
   <div
     ref="navEl"
     class="cy-tab"
-    :class="[tabSelected ? 'text-primary-80' : 'text-stone-50', { 'tab-disabled': disabled }]"
+    :class="[tabSelected ? 'text-primary-80' : 'text-gray-50', { 'tab-disabled': disabled }]"
     v-bind:[idBind.name]="idBind.value"
     @click="tabClicked"
   >
@@ -120,7 +120,7 @@ const tabClicked = () => {
   @apply cursor-pointer duration-150;
 
   &.tab-disabled {
-    @apply hover:bg-gray-10/50 cursor-not-allowed text-stone-40;
+    @apply hover:bg-gray-10/50 text-gray-40 cursor-not-allowed;
   }
 }
 </style>

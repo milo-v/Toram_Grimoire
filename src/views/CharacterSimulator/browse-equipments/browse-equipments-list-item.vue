@@ -42,7 +42,7 @@ const { device } = useDevice()
       :class="[{ 'opacity-25': invalid }, selected ? 'border-primary-50' : 'border-transparent']"
       hover
     >
-      <div class="flex px-3.5 py-2.5">
+      <div class="flex px-3.5 py-2">
         <CommonEquipmentIconCircle :equipment="equipment" :equipped="equipped" class="mr-2.5" />
         <div class="grow">
           <EquipmentBrowseTitle :equipment="equipment" class="mr-5" />

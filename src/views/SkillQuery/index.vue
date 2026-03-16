@@ -4,13 +4,13 @@
       <cy-icon-text v-if="currentSkill" icon="bx:bxs-book-bookmark">
         {{ currentSkill.name }}
       </cy-icon-text>
-      <div v-else class="ml-2 text-primary-30">
+      <div v-else class="text-primary-30 ml-2">
         {{ t('skill-query.search-tips') }}
       </div>
       <cy-button-icon class="ml-auto" icon="bx:bx-search" />
     </cy-top-header>
     <div class="px-1">
-      <div ref="skillTreeCategoryMenuElement" class="p-1">
+      <div ref="skillTreeCategoryMenuElement" class="mt-2 px-1">
         <cy-button-action
           v-for="stc in skillRoot.skillTreeCategorys"
           :key="stc.id"
@@ -22,7 +22,7 @@
         </cy-button-action>
       </div>
       <cy-hr />
-      <div v-if="currentSkillTreeCategory" class="p-1">
+      <div v-if="currentSkillTreeCategory" class="mb-2 px-1">
         <cy-button-action
           v-for="st in currentSkillTreeCategory.skillTrees"
           :key="st.id"

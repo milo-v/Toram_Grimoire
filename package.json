@@ -71,7 +71,7 @@
     "vue-tsc": "^2.0.21"
   },
   "browserslist": [
-    "> 0.5%",
+    "> 0.3%",
     "last 8 versions",
     "ios_saf >= 11",
     "Safari >= 11",

@@ -13,19 +13,15 @@
           <span class="text-primary-50">{{ container.get('unit') }}</span>
         </template>
       </cy-input-counter>
-      <cy-icon-text v-else icon="ion-leaf">
+      <div v-else class="border-1 border-blue-30 text-blue-60 px-3 py-1.5">
         {{ container.get('name') }}
-      </cy-icon-text>
+      </div>
     </div>
-    <div class="ml-4 mt-0.5 flex items-center space-x-1">
+    <div class="text-primary-30 ml-4 mt-0.5 flex items-center space-x-1">
       <cy-icon icon="icon-park-outline:inner-shadow-top-right" class="mr-2" />
-      <div v-if="stackValueRangeOrigin[0]" class="text-primary-50">
-        {{ stackValueRangeOrigin[0] }}
-      </div>
+      <skill-branch-prop-value v-if="container.has('min')" :result="container.result('min')" />
       <cy-icon icon="mdi:tilde" width="0.8rem" />
-      <div v-if="stackValueRangeOrigin[1]" class="text-primary-50">
-        {{ stackValueRangeOrigin[1] }}
-      </div>
+      <skill-branch-prop-value v-if="container.has('max')" :result="container.result('max')" />
     </div>
   </div>
 </template>
@@ -38,6 +34,8 @@ import { toInt } from '@/shared/utils/number'
 
 import { SkillBranchItem, SkillComputingContainer } from '@/lib/Skill/SkillComputing'
 import { FormulaDisplayModes } from '@/lib/Skill/SkillComputing'
+
+import SkillBranchPropValue from './layouts/skill-branch-prop-value.vue'
 
 import { ComputingContainerInjectionKey } from '../injection-keys'
 import StackHandler from './branch-handlers/StackHandler'

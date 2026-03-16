@@ -38,8 +38,8 @@
           />
         </div>
         <div v-if="crystal.origin.obtains.length > 0" class="mt-3 flex items-center">
-          <cy-icon class="text-stone-40" icon="mdi:treasure-chest-outline" small />
-          <span class="text-stone-40 ml-1 text-sm">
+          <cy-icon class="text-gray-40" icon="mdi:treasure-chest-outline" small />
+          <span class="text-gray-40 ml-1 text-sm">
             {{ t('crystal-query.obtain-prefix') }}
           </span>
           <span class="text-primary-60 ml-2 text-sm">

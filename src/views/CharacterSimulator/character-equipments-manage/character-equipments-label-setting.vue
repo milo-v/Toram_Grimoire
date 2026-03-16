@@ -72,7 +72,7 @@ const closeEditingLabel = () => {
 
 <template>
   <div>
-    <div class="text-stone-40 flex items-center px-1.5 py-2 text-sm">
+    <div class="text-gray-40 flex items-center px-1.5 py-2 text-sm">
       {{ t('character-simulator.equipment-basic-editor.equipment-label') }}
       <cy-button-icon
         icon="ic-round-add-circle-outline"

@@ -35,7 +35,7 @@
       </template>
       <template #side-contents>
         <AppLayoutBottomContent v-if="displayModeMenuVisible" class="px-3 py-2">
-          <div class="text-stone-40 text-sm">
+          <div class="text-gray-40 text-sm">
             {{ t('registlet-query.display-mode.title') }}
           </div>
           <div class="mt-1">

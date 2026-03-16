@@ -1,11 +1,12 @@
 <template>
   <div class="flex w-full flex-wrap items-center space-x-4 px-3 py-1">
-    <cy-icon-text icon="entypo-link" small text-color="fuchsia-60">
+    <cy-icon icon="entypo-link" small class="mr-1" />
+    <span class="text-primary-30 mr-2.5 text-sm">
       {{ t('skill-query.branch.reference.base-title') }}
-    </cy-icon-text>
-    <div v-if="container.has('text')">
+    </span>
+    <span v-if="container.has('text')">
       {{ container.get('text') }}
-    </div>
+    </span>
     <div>
       <a target="_blank" :href="container.get('url')" class="text-primary-50 underline">
         {{ container.get('url_text') }}

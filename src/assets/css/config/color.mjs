@@ -26,11 +26,10 @@ const baseColors = {
   orange: tcColors.amber,
   emerald: tcColors.emerald,
   red: tcColors.rose,
-  gray: tcColors.gray,
-  stone: tcColors.slate,
+  gray: tcColors.slate,
 }
 
-// pattern: fuchsia|violet|blue|cyan|orange|emerald|red|gray|stone
+// pattern: fuchsia|violet|blue|cyan|orange|emerald|red|gray
 
 // const primary = {
 //   '50': '#FCF2F8',

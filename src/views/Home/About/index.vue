@@ -57,7 +57,7 @@
             </div>
           </template>
           <template v-else>
-            <div class="text-stone-60 mb-6 text-sm">
+            <div class="text-gray-60 mb-6 text-sm">
               <div>{{ t(`app.about.${column.title}.sub-title`) }}</div>
             </div>
             <div class="space-y-2 pb-2">

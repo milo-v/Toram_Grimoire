@@ -10,7 +10,7 @@
           v-if="currentEffectEquipments && subContentVisible"
           class="flex items-center pb-1.5 pl-3 pt-2"
         >
-          <div class="shrink-0 pr-3 text-sm text-stone-40">
+          <div class="text-gray-40 shrink-0 pr-3 text-sm">
             {{ t('skill-query.branch.current-effect-equipments-prefix') }}
           </div>
           <SkillEquipmentButton :equipments="currentEffectEquipments" selected />
@@ -78,7 +78,7 @@
       <cy-transition>
         <div v-if="!sub && subContentVisible">
           <div class="flex items-center pb-1.5 pl-3 pt-3">
-            <div class="shrink-0 pr-3 text-sm text-stone-40">
+            <div class="text-gray-40 shrink-0 pr-3 text-sm">
               {{ t('skill-query.branch.compared-effect-equipments-prefix') }}
             </div>
             <div class="flex flex-wrap items-center">
@@ -300,7 +300,7 @@ const subButtonAvailable = computed(() => {
       @apply text-sm;
     }
     & > .value {
-      @apply bg-white/75 ml-1.5 mr-1 inline-flex items-center px-2 text-sm;
+      @apply ml-1.5 mr-1 inline-flex items-center bg-white/75 px-2 text-sm;
 
       & > .param-separate {
         @apply mx-2 mt-0.5 inline-block h-4 bg-transparent;
@@ -316,7 +316,7 @@ const subButtonAvailable = computed(() => {
 }
 
 .skill-branch-content {
-  @apply border-l-0 border-primary-50 pl-0 duration-200;
+  @apply border-primary-50 border-l-0 pl-0 duration-200;
   transition-property: border-left-width, padding-left;
 
   &.sub-content-active {
@@ -324,11 +324,11 @@ const subButtonAvailable = computed(() => {
   }
 }
 .group-end {
-  @apply relative border-t-1 border-primary-50;
+  @apply border-t-1 border-primary-50 relative;
 
   &::before {
     content: '';
-    @apply absolute -right-2 -top-2 h-4 w-4 bg-primary-50;
+    @apply bg-primary-50 absolute -right-2 -top-2 h-4 w-4;
   }
 }
 </style>

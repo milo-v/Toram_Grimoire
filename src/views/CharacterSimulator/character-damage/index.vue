@@ -223,6 +223,6 @@ const rangeDamageOptions: {
 ]
 
 const RenderSectionHeader = ({ title }: { title: string }) => {
-  return h('div', { class: 'text-stone-40 mt-6 flex items-center text-sm' }, title)
+  return h('div', { class: 'text-gray-40 mt-6 flex items-center text-sm' }, title)
 }
 </script>

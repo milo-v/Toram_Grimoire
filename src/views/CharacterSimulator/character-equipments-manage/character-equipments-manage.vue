@@ -186,7 +186,7 @@ const sortAllEquipments = () => {
   >
     <div class="wd-lg:flex h-full w-full overflow-y-auto px-2 py-4">
       <div class="wd-lg:h-full shrink-0 py-2 pb-6">
-        <div class="text-stone-40 mb-1 px-2 text-sm">
+        <div class="text-gray-40 mb-1 px-2 text-sm">
           {{ t('character-simulator.character-equipments-manage.mode-selections-title') }}
         </div>
         <div class="mb-1 space-y-2">
@@ -230,7 +230,7 @@ const sortAllEquipments = () => {
             @label-click="toggleSelectedLabel"
           />
         </div>
-        <div class="text-stone-40 mb-1 px-2 text-sm">
+        <div class="text-gray-40 mb-1 px-2 text-sm">
           {{ t('character-simulator.character-equipments-manage.batch-sorting-title') }}
         </div>
         <div class="mb-2 flex flex-col">

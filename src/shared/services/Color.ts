@@ -53,5 +53,4 @@ export const enum AppColors {
   Emerald = 'emerald',
   Red = 'red',
   Gray = 'gray',
-  Stone = 'stone',
 }

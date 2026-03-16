@@ -74,7 +74,7 @@ const RenderContentTitie = (attrs: { title: string }) => {
     },
     [
       h('div', { class: 'flex shrink-0 items-center text-sm text-gray-40' }, attrs.title),
-      h('div', { class: 'ml-2 w-full border-b border-stone-20' }),
+      h('div', { class: 'ml-2 w-full border-b border-gray-20' }),
     ]
   )
 }
