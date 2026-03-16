@@ -48,7 +48,7 @@
       <div>{{ t('skill-query.no-any-skill-effect-match-message.0') }}</div>
       <div>{{ t('skill-query.no-any-skill-effect-match-message.1') }}</div>
     </cy-default-tips>
-    <div v-if="currentSkillItem" class="mt-4">
+    <div v-if="currentSkillItem" class="mt-4 flex justify-center">
       <SkillSwitchEffectButtons
         :skill-item="currentSkillItem"
         @select-equipment="emit('update:selected-equipment', $event)"

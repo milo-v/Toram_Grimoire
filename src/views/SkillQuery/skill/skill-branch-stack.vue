@@ -7,12 +7,8 @@
         :range="stackValueRange"
         :input-width="container.getCustomData('stackInputWidth')"
         :step="stackStep"
+        :title="container.get('name')"
       >
-        <template #title>
-          <cy-icon-text icon="ion-leaf">
-            {{ container.get('name') }}
-          </cy-icon-text>
-        </template>
         <template v-if="container.get('unit')" #unit>
           <span class="text-primary-50">{{ container.get('unit') }}</span>
         </template>

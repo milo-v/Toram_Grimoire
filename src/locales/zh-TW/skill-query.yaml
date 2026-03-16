@@ -1,6 +1,8 @@
 skill-info: 技能資訊
 historical-record: 歷史紀錄
+historical-record-equipment-type-invalid-tips: 目前選取的裝備類型沒有歷史紀錄。
 select-skill: 選擇技能
+main-menu-title-common: 基本設定
 skill-level: 技能等級
 character-level: 角色等級
 registlet-level: 雷吉斯托環等級
@@ -8,6 +10,7 @@ registlet-level-abbreviation: 托環等級
 registlet-info-tip: 關於雷吉斯托環的詳細資訊，請查看{link}。
 registlet-max-level-title: 最大等級
 search-tips: 點擊這裡來搜尋技能
+quick-switch-equipment-type-caption: 這裡可以快速切換目前技能的裝備類型。
 go-to-skill: 查看
 formula-display-mode:
   title: 公式顯示模式

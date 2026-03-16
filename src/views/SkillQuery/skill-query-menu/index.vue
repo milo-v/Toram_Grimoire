@@ -49,7 +49,7 @@
       <AppLayoutBottomContent v-if="advancedMenuVisible" class="p-4">
         <div class="space-y-3">
           <div v-for="{ key, value } in equipmentOptions" :key="key">
-            <div class="text-sm text-primary-30">
+            <div class="text-primary-30 text-sm">
               {{ t(`skill-query.equipment.${key}: title`) }}
             </div>
             <div class="flex flex-wrap items-start">
@@ -59,28 +59,40 @@
                 :selected="equip === selectedEquipment[key]"
                 @click="toggleCurrentEquipment(key, equip)"
               >
-                {{ getEquipmentText(equip) }}
+                <div class="flex items-center">
+                  <cy-icon
+                    v-if="equip !== null"
+                    :icon="CharacterEquipment.getImagePath(equip)"
+                    class="mr-1"
+                  />
+                  {{ getEquipmentText(equip) }}
+                </div>
               </cy-button-radio>
             </div>
           </div>
         </div>
-        <div class="mt-3">
-          <cy-input-counter
-            v-model:value="skillLevel"
-            :range="[1, 10]"
-            :title="t('skill-query.skill-level')"
-          />
+        <div class="text-primary-30 mt-2 text-sm">
+          {{ t('skill-query.main-menu-title-common') }}
+        </div>
+        <div class="mt-2 space-y-2">
+          <div>
+            <cy-input-counter
+              v-model:value="skillLevel"
+              :range="[1, 10]"
+              :title="t('skill-query.skill-level')"
+            />
+          </div>
+          <div>
+            <cy-input-counter
+              v-model:value="characterLevel"
+              :range="[1, CHARACTER_MAX_LEVEL]"
+              :step="10"
+              :title="t('skill-query.character-level')"
+            />
+          </div>
         </div>
         <div class="mt-3">
-          <cy-input-counter
-            v-model:value="characterLevel"
-            :range="[1, CHARACTER_MAX_LEVEL]"
-            :step="10"
-            :title="t('skill-query.character-level')"
-          />
-        </div>
-        <div class="mt-3">
-          <div class="text-sm text-primary-30">
+          <div class="text-primary-30 text-sm">
             {{ t('skill-query.formula-display-mode.title') }}
           </div>
           <div class="flex flex-wrap items-center">
@@ -101,11 +113,16 @@
       </AppLayoutBottomContent>
     </template>
     <template #side-contents>
-      <AppLayoutBottomContent v-if="switchEffectVisible" class="p-3">
-        <SkillSwitchEffectButtons
-          :skill-item="skillItem!"
-          @select-equipment="emit('update:selected-equipment', $event)"
-        />
+      <AppLayoutBottomContent v-if="switchEffectVisible" class="px-3 py-2.5">
+        <div class="text-primary-30 px-2 text-sm">
+          {{ t('skill-query.quick-switch-equipment-type-caption') }}
+        </div>
+        <div class="mt-2">
+          <SkillSwitchEffectButtons
+            :skill-item="skillItem!"
+            @select-equipment="emit('update:selected-equipment', $event)"
+          />
+        </div>
       </AppLayoutBottomContent>
     </template>
   </AppLayoutBottom>
@@ -118,6 +135,7 @@ import { useI18n } from 'vue-i18n'
 import { useToggle } from '@/shared/setup/State'
 
 import { CHARACTER_MAX_LEVEL } from '@/lib/Character/Character'
+import { CharacterEquipment } from '@/lib/Character/CharacterEquipment'
 import { EquipmentRestrictions } from '@/lib/Character/Stat'
 import { SkillTree } from '@/lib/Skill/Skill'
 import { SkillComputingContainer, SkillItem } from '@/lib/Skill/SkillComputing'

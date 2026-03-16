@@ -111,12 +111,12 @@
           v-if="
             state.currentMode === SearchModes.Normal && modes[SearchModes.Normal].optionsVisible
           "
-          class="p-3"
+          class="px-3.5 py-2.5"
         >
-          <cy-icon-text icon="bx-bx-target-lock" small text-color="fuchsia-60">
+          <div class="text-primary-30 mb-1 text-sm">
             {{ t('item-query.options-normal.title') }}
-          </cy-icon-text>
-          <div class="px-2 py-1">
+          </div>
+          <div>
             <cy-button-check
               v-for="item in modes[SearchModes.Normal].targets"
               :key="item.value"
@@ -174,31 +174,21 @@
         <AppLayoutBottomContent v-show="conditionOptionsVisible">
           <ItemQueryFilterMenu :equipments="equipments" @filter="validEquipments = $event" />
         </AppLayoutBottomContent>
-        <AppLayoutBottomContent v-show="sortOptionsVisible" class="p-3">
-          <div>
-            <div>
-              <cy-icon-text icon="mdi-sort-variant" color="fuchsia" small>
-                {{ t('item-query.sort-options.title') }}
-              </cy-icon-text>
-            </div>
-            <cy-button-radio-group
-              v-model:value="sortState.currentSelected"
-              class="px-2 pb-2"
-              :options="consts.sortOptions"
-            />
+        <AppLayoutBottomContent v-show="sortOptionsVisible" class="px-3.5 py-2.5">
+          <div class="text-primary-30 text-sm">
+            {{ t('item-query.sort-options.title') }}
           </div>
-          <div>
-            <div>
-              <cy-icon-text icon="fluent-arrow-sort-24-filled" text-color="fuchsia-60" small>
-                {{ t('item-query.sort-options.order.title') }}
-              </cy-icon-text>
-            </div>
-            <cy-button-radio-group
-              v-model:value="sortState.currentOrder"
-              class="px-2 pb-2"
-              :options="consts.sortOrderOptions"
-            />
+          <cy-button-radio-group
+            v-model:value="sortState.currentSelected"
+            :options="consts.sortOptions"
+          />
+          <div class="text-primary-30 mt-2 text-sm">
+            {{ t('item-query.sort-options.order.title') }}
           </div>
+          <cy-button-radio-group
+            v-model:value="sortState.currentOrder"
+            :options="consts.sortOrderOptions"
+          />
         </AppLayoutBottomContent>
       </template>
     </AppLayoutBottom>
@@ -217,7 +207,7 @@
             clearable
           />
         </div>
-        <div v-if="statsSearchResult.length !== 0" class="divide-y divide-primary-20">
+        <div v-if="statsSearchResult.length !== 0" class="divide-primary-20 divide-y">
           <div
             v-for="stat in statsSearchResult"
             :key="stat.origin.statId(stat.type)"

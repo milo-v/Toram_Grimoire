@@ -1,12 +1,10 @@
 <template>
-  <div class="flex justify-center">
-    <div class="flex flex-col">
-      <div v-for="equipment in allEquipments" :key="equipment.id">
-        <SkillEquipmentButton
-          :equipments="[equipment.value]"
-          @click="emit('select-equipment', equipment.value)"
-        />
-      </div>
+  <div class="flex flex-col">
+    <div v-for="equipment in allEquipments" :key="equipment.id">
+      <SkillEquipmentButton
+        :equipments="[equipment.value]"
+        @click="emit('select-equipment', equipment.value)"
+      />
     </div>
   </div>
 </template>

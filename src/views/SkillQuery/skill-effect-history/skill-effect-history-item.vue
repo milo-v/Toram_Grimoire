@@ -1,7 +1,7 @@
 <template>
-  <div class="skill-effect-history-item-wrapper px-2" :class="{ 'detail-active': detailVisible }">
+  <div class="skill-effect-history-item-wrapper" :class="{ 'detail-active': detailVisible }">
     <cy-list-item @click="detailVisible = !detailVisible">
-      <div class="flex w-full items-center">
+      <div class="flex w-full items-center py-1">
         <cy-icon-text
           icon="ic:round-history"
           :text-color="detailVisible ? 'primary-50' : 'primary-90'"
@@ -13,23 +13,24 @@
           class="ml-auto"
         />
       </div>
-      <div
-        v-if="introductionBranchItemDatas.length > 0 && !detailVisible"
-        class="flex w-full items-start"
-      >
-        <cy-icon icon="ic:round-label" class="ml-2 mt-1.5" />
-        <div>
-          <SkillBranch
-            :skill-branch-item="introductionBranchItemDatas[0].branchItem"
-            :computing="computing"
-            sub
-          />
-        </div>
-      </div>
     </cy-list-item>
-    <div v-if="detailVisible" class="pt-2">
+    <div
+      v-if="introductionBranchItemDatas.length > 0 && !detailVisible"
+      class="pl-5.5 flex w-full items-start pb-2"
+    >
+      <SkillBranch
+        :skill-branch-item="introductionBranchItemDatas[0].branchItem"
+        :computing="computing"
+        sub
+      />
+    </div>
+    <div v-if="detailVisible">
       <div v-if="introductionBranchItemDatas.length > 0" class="space-y-3 pb-4">
-        <div v-for="{ branchItem, iid } in introductionBranchItemDatas" :key="iid" class="px-2">
+        <div
+          v-for="{ branchItem, iid } in introductionBranchItemDatas"
+          :key="iid"
+          class="pl-5.5 pr-2"
+        >
           <SkillBranch :skill-branch-item="branchItem" :computing="computing" sub />
         </div>
       </div>
@@ -173,14 +174,15 @@ const detailVisible = ref(introductionBranchItemDatas.value.length === 0)
 @reference "@/tailwind.css";
 
 .skill-effect-history-item-wrapper {
-  border-top: 1px solid var(--app-primary-30);
+  @apply border-1 border-primary-10;
+
   &.detail-active {
-    @apply mb-2 border-l-2 border-primary-30 pb-2;
+    @apply border-primary-30;
   }
 }
 
 .history-item-compare {
-  @apply border-l-4 border-primary-50 p-2 pl-4;
+  @apply border-primary-50 border-l-4 p-2 pl-4;
 }
 
 .history-item-compare + .history-item-compare {
@@ -190,6 +192,6 @@ const detailVisible = ref(introductionBranchItemDatas.value.length === 0)
   @apply flex w-full justify-center py-2;
 }
 .history-item-compare-empty {
-  @apply flex justify-center border border-primary-30 p-4;
+  @apply border-primary-30 flex justify-center border p-4;
 }
 </style>

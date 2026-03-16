@@ -6,7 +6,7 @@
           <EnchantStepView :step="step" />
         </div>
         <div
-          class="step-container flex h-48 cursor-pointer items-center justify-center border border-primary-30 duration-200 hover:border-primary-50"
+          class="step-container border-primary-30 hover:border-primary-50 flex h-48 cursor-pointer items-center justify-center border duration-200"
           @click="appendStep"
         >
           <cy-icon icon="ic-round-add-circle-outline" width="3.5rem" />
@@ -140,37 +140,37 @@
               <EnchantCommonSetting class="mt-2" />
             </div>
           </cy-transition>
-          <cy-icon-text small text-color="fuchsia-60" class="mt-3">
-            {{ t('enchant-simulator.equipment-type') }}
-          </cy-icon-text>
-          <div class="px-2 py-0.5">
-            <cy-button-check
-              v-for="option in equipmentTypeOptions"
-              :key="option.id"
-              :selected="currentEquipmentType === option.id"
-              @click="currentEquipmentType = option.id"
-            >
-              {{ option.text }}
-            </cy-button-check>
-          </div>
-          <div class="mt-2 border-t border-primary-30 pt-2">
-            <cy-icon-text small text-color="fuchsia-60" class="mt-3">
+          <div class="px-2">
+            <div class="mt-3 text-sm text-gray-50">
+              {{ t('enchant-simulator.equipment-type') }}
+            </div>
+            <div class="py-0.5">
+              <cy-button-radio
+                v-for="option in equipmentTypeOptions"
+                :key="option.id"
+                :selected="currentEquipmentType === option.id"
+                @click="currentEquipmentType = option.id"
+              >
+                {{ option.text }}
+              </cy-button-radio>
+            </div>
+            <div class="mt-3 text-sm text-gray-50">
               {{ t('enchant-simulator.stat-display-mode.title') }}
-            </cy-icon-text>
-            <div class="px-2 py-0.5">
-              <cy-button-check
+            </div>
+            <div class="py-0.5">
+              <cy-button-radio
                 :selected="state.statDisplayMode === 0"
                 @update:selected="state.statDisplayMode = 0"
               >
                 {{ t('enchant-simulator.stat-display-mode.potential-cost') }}
-              </cy-button-check>
-              <cy-button-check
+              </cy-button-radio>
+              <cy-button-radio
                 :selected="state.statDisplayMode === 1"
                 main-color="blue-60"
                 @update:selected="state.statDisplayMode = 1"
               >
                 {{ t('enchant-simulator.stat-display-mode.material-point') }}
-              </cy-button-check>
+              </cy-button-radio>
             </div>
           </div>
         </AppLayoutBottomContent>
