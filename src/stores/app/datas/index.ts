@@ -3,11 +3,9 @@ import { ref } from 'vue'
 
 import { useCharacterFoodStore } from '@/stores/views/character/food-build'
 import { useCharacterSkillStore } from '@/stores/views/character/skill'
+import { useLocaleStore } from '@/stores/app/locale'
 
-import Grimoire from '@/shared/Grimoire'
-import { DataPathIds } from '@/shared/services/DataPath'
 import { InitCrystalIcons, InitEquipmentIcons, InitSkillIcons } from '@/shared/services/Images'
-import Notify from '@/shared/setup/Notify'
 
 import CharacterSystem from '@/lib/Character'
 import DamageCalculationSystem from '@/lib/Damage'
@@ -18,9 +16,13 @@ import QuestSystem from '@/lib/Quest'
 import RegistletSystem from '@/lib/Registlet'
 import SkillSystem from '@/lib/Skill'
 
+import type { StatLocale } from '@/data/types/stats'
+import type { GlossaryLocale } from '@/data/types/glossary'
+import type { EquipmentLocale } from '@/data/types/equipment'
+import type { SkillMainLocale } from '@/data/types/skill'
+
 import { DatasStoreBase } from './DatasStoreBase'
 import { DataStoreIds } from './enums'
-import { DownloadDatas } from './utils/DownloadDatas'
 import { LoadCharacterStats } from './utils/LoadCharacterStat'
 import { LoadCrystals } from './utils/LoadCrystals'
 import { LoadEnchant } from './utils/LoadEnchant'
@@ -34,6 +36,26 @@ import { LoadStats } from './utils/LoadStats'
 
 export { DataStoreIds } from './enums'
 
+/** Numeric lang index → locale file suffix. Index 1 (zh-TW) is the base data, no file needed. */
+const LANG_SUFFIX: Record<number, string> = {
+  0: 'en',
+  2: 'ja',
+  3: 'zh_cn',
+}
+
+async function loadLocale<T>(
+  langIndex: number,
+  importer: (suffix: string) => Promise<{ default: T }>
+): Promise<T | undefined> {
+  const suffix = LANG_SUFFIX[langIndex]
+  if (!suffix) return undefined
+  try {
+    return (await importer(suffix)).default
+  } catch {
+    return undefined
+  }
+}
+
 export const useDatasStore = defineStore('app-datas', () => {
   const loaded = ref<Map<DataStoreIds, boolean>>(new Map())
   const waitLoadedTicks = ref<Map<DataStoreIds, ((value: boolean) => void)[]>>(new Map())
@@ -41,12 +63,8 @@ export const useDatasStore = defineStore('app-datas', () => {
   const checkLoaded = (id: DataStoreIds) => loaded.value.has(id)
 
   const waitLoaded = (id: DataStoreIds) => {
-    if (checkLoaded(id)) {
-      return Promise.resolve()
-    }
-    if (!waitLoadedTicks.value.has(id)) {
-      waitLoadedTicks.value.set(id, [])
-    }
+    if (checkLoaded(id)) return Promise.resolve()
+    if (!waitLoadedTicks.value.has(id)) waitLoadedTicks.value.set(id, [])
     return new Promise(resolve => {
       waitLoadedTicks.value.get(id)!.push(resolve)
     })
@@ -54,165 +72,156 @@ export const useDatasStore = defineStore('app-datas', () => {
 
   const loadFinished = (id: DataStoreIds) => {
     loaded.value.set(id, true)
-    waitLoadedTicks.value.get(id)?.forEach(ticks => ticks(true))
+    waitLoadedTicks.value.get(id)?.forEach(tick => tick(true))
   }
 
   const initItemsInstance = () => {
-    if (DatasStoreBase.Items === null) {
-      DatasStoreBase.Items = new ItemsSystem()
-    }
+    if (DatasStoreBase.Items === null) DatasStoreBase.Items = new ItemsSystem()
     return DatasStoreBase.Items
   }
-
   const initCharacterInstance = () => {
-    if (DatasStoreBase.Character === null) {
-      DatasStoreBase.Character = new CharacterSystem()
-    }
+    if (DatasStoreBase.Character === null) DatasStoreBase.Character = new CharacterSystem()
     return DatasStoreBase.Character
   }
-
   const initGlossaryInstance = () => {
-    if (DatasStoreBase.Glossary === null) {
-      DatasStoreBase.Glossary = new GlossarySystem()
-    }
+    if (DatasStoreBase.Glossary === null) DatasStoreBase.Glossary = new GlossarySystem()
     return DatasStoreBase.Glossary
   }
-
   const initSkillInstance = () => {
-    if (DatasStoreBase.Skill === null) {
-      DatasStoreBase.Skill = new SkillSystem()
-    }
+    if (DatasStoreBase.Skill === null) DatasStoreBase.Skill = new SkillSystem()
     return DatasStoreBase.Skill
   }
-
   const initEnchantInstance = () => {
-    if (DatasStoreBase.Enchant === null) {
-      DatasStoreBase.Enchant = new EnchantSystem()
-    }
+    if (DatasStoreBase.Enchant === null) DatasStoreBase.Enchant = new EnchantSystem()
     return DatasStoreBase.Enchant
   }
-
   const initDamageCalculationInstance = () => {
-    if (DatasStoreBase.DamageCalculation === null) {
+    if (DatasStoreBase.DamageCalculation === null)
       DatasStoreBase.DamageCalculation = new DamageCalculationSystem()
-    }
     return DatasStoreBase.DamageCalculation
   }
-
   const initRegistletInstance = () => {
-    if (DatasStoreBase.Registlet === null) {
-      DatasStoreBase.Registlet = new RegistletSystem()
-    }
+    if (DatasStoreBase.Registlet === null) DatasStoreBase.Registlet = new RegistletSystem()
     return DatasStoreBase.Registlet
   }
-
   const initQuestInstance = () => {
-    if (DatasStoreBase.Quest === null) {
-      DatasStoreBase.Quest = new QuestSystem()
-    }
+    if (DatasStoreBase.Quest === null) DatasStoreBase.Quest = new QuestSystem()
     return DatasStoreBase.Quest
   }
 
   const prepareDataStore = async (dataId: DataStoreIds): Promise<() => Promise<void>> => {
+    const { primaryLang, secondaryLang } = useLocaleStore()
     switch (dataId) {
       case DataStoreIds.Items: {
         const itemSystem = initItemsInstance()
-        const [equipmentData, crystalData] = await DownloadDatas(
-          { path: DataPathIds.Equipment, lang: true },
-          DataPathIds.Crystal
-        )
+        const [{ default: equipmentData }, { default: crystalData }, equipmentLocale] =
+          await Promise.all([
+            import('@/data/equipment.json'),
+            import('@/data/crystal.json'),
+            loadLocale<EquipmentLocale>(primaryLang, suffix =>
+              import(`@/data/equipment.${suffix}.json`)
+            ),
+          ])
         return async () => {
-          LoadEquipments(itemSystem, equipmentData)
-          LoadCrystals(itemSystem, crystalData.baseData)
+          LoadEquipments(itemSystem, equipmentData as any, equipmentLocale)
+          LoadCrystals(itemSystem, crystalData as any)
           await InitCrystalIcons()
         }
       }
+
       case DataStoreIds.Stats: {
         const characterSystem = initCharacterInstance()
-        const [statsData] = await DownloadDatas({
-          path: DataPathIds.Stats,
-          lang: true,
-        })
+        const [{ default: statsData }, statsLocale] = await Promise.all([
+          import('@/data/stats.json'),
+          loadLocale<StatLocale>(primaryLang, suffix => import(`@/data/stats.${suffix}.json`)),
+        ])
         return async () => {
-          LoadStats(characterSystem, statsData)
+          LoadStats(characterSystem, statsData as any, statsLocale)
           await InitEquipmentIcons()
         }
       }
+
       case DataStoreIds.CharacterStats: {
         const characterSystem = initCharacterInstance()
-        const [characterStatsData] = await DownloadDatas({
-          path: DataPathIds.CharacterStats,
-          lang: true,
-        })
+        const { default: data } = await import('@/data/character_stats.json')
         return async () => {
-          LoadCharacterStats(characterSystem, characterStatsData)
+          LoadCharacterStats(characterSystem, data as any)
         }
       }
+
       case DataStoreIds.Glossary: {
         const glossarySystem = initGlossaryInstance()
-        const [glossaryData] = await DownloadDatas({
-          path: DataPathIds.Glossary,
-          lang: true,
-        })
+        const [{ default: glossaryData }, glossaryLocale] = await Promise.all([
+          import('@/data/glossary.json'),
+          loadLocale<GlossaryLocale>(primaryLang, suffix =>
+            import(`@/data/glossary.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadGlossaryTag(glossarySystem, glossaryData)
+          LoadGlossaryTag(glossarySystem, glossaryData as any, glossaryLocale)
         }
       }
+
       case DataStoreIds.Skill: {
         const skillSystem = initSkillInstance()
-        const [skillData, skillMainData] = await DownloadDatas(
-          { path: DataPathIds.Skill, lang: true },
-          { path: DataPathIds.SkillMain, lang: true }
-        )
+        const [{ default: skillData }, { default: skillMainData }, skillMainLocale] =
+          await Promise.all([
+            import('@/data/skill.json'),
+            import('@/data/skill_main.json'),
+            loadLocale<SkillMainLocale>(primaryLang, suffix =>
+              import(`@/data/skill_main.${suffix}.json`)
+            ),
+          ])
         return async () => {
-          LoadSkill(skillSystem, skillData)
-          LoadSkillMain(skillSystem, skillMainData)
+          LoadSkill(skillSystem, skillData as any)
+          LoadSkillMain(skillSystem, skillMainData as any, skillMainLocale)
           const skillStore = useCharacterSkillStore()
           skillStore.initSkillRoot(skillSystem.skillRoot)
-
           await InitSkillIcons()
         }
       }
+
       case DataStoreIds.Food: {
         const foodStore = useCharacterFoodStore()
         return async () => {
           foodStore.initFoodsBase()
         }
       }
+
       case DataStoreIds.Enchant: {
         const enchantSystem = initEnchantInstance()
-        const [enchantData] = await DownloadDatas(DataPathIds.Enchant)
-        if (!enchantData.baseData[0][4].startsWith('額外上限')) {
-          const { notify } = Notify()
-          notify(Grimoire.i18n.t('app.notices.enchant-refactor'))
-        }
+        const { default: data } = await import('@/data/enchant.json')
         return async () => {
-          LoadEnchant(enchantSystem, enchantData.baseData)
+          LoadEnchant(enchantSystem, data as any)
         }
       }
+
       case DataStoreIds.DamageCalculation: {
         initDamageCalculationInstance()
         return () => Promise.resolve()
       }
+
       case DataStoreIds.Registlet: {
         const registSystem = initRegistletInstance()
-        const [registletData] = await DownloadDatas(DataPathIds.Registlet)
+        const { default: data } = await import('@/data/registlet.json')
         return async () => {
-          LoadRegistlet(registSystem, registletData.baseData)
+          LoadRegistlet(registSystem, data as any)
         }
       }
+
       case DataStoreIds.ItemsPotion: {
         const itemsSystem = initItemsInstance()
-        const [potionData] = await DownloadDatas(DataPathIds.Potion)
+        const { default: data } = await import('@/data/potion.json')
         return async () => {
-          LoadPotions(itemsSystem.potionsRoot, potionData.baseData)
+          LoadPotions(itemsSystem.potionsRoot, data as any)
         }
       }
+
       case DataStoreIds.Quest: {
         const questSystem = initQuestInstance()
-        const [mainQuestData] = await DownloadDatas(DataPathIds.Quest)
+        const { default: data } = await import('@/data/quest.json')
         return async () => {
-          LoadQuests(questSystem, mainQuestData.baseData)
+          LoadQuests(questSystem, data as any)
         }
       }
     }
