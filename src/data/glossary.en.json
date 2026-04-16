@@ -1,0 +1,136 @@
+{
+  "膽怯": {
+    "tagName": "Flinch"
+  },
+  "翻覆": {
+    "tagName": "Tumble"
+  },
+  "昏厥": {
+    "tagName": "Stun"
+  },
+  "逼退": {
+    "tagName": "Knock Back"
+  },
+  "睡眠": {
+    "tagName": "Sleep"
+  },
+  "麻痺": {
+    "tagName": "Paralysis"
+  },
+  "遲緩": {
+    "tagName": "Slow"
+  },
+  "停止": {
+    "tagName": "Stop"
+  },
+  "乏力": {
+    "tagName": "Lethargy"
+  },
+  "盲目": {
+    "tagName": "Blind"
+  },
+  "眩暈": {
+    "tagName": "Dizzy"
+  },
+  "著火": {
+    "tagName": "Ignite"
+  },
+  "猛毒": {
+    "tagName": "Venom"
+  },
+  "閃光": {
+    "tagName": "Dazzled"
+  },
+  "冰凍": {
+    "tagName": "Freeze"
+  },
+  "降防": {
+    "tagName": "Armor Break"
+  },
+  "畏懼": {
+    "tagName": "Fear"
+  },
+  "出血": {
+    "tagName": "Bleed"
+  },
+  "衰弱": {
+    "tagName": "Weaken"
+  },
+  "魔力爆發": {
+    "tagName": "Mana Explosion"
+  },
+  "疲勞": {
+    "tagName": "Fatigue"
+  },
+  "石化": {
+    "tagName": "Petrified"
+  },
+  "無敵": {
+    "tagName": "Invincible"
+  },
+  "連擊": {
+    "tagName": "Consecutive"
+  },
+  "心眼": {
+    "tagName": "Mind's Eye"
+  },
+  "補位": {
+    "tagName": "Save"
+  },
+  "迅速": {
+    "tagName": "Swift"
+  },
+  "增幅": {
+    "tagName": "Smite"
+  },
+  "執著": {
+    "tagName": "Tenacity"
+  },
+  "無敵（連擊效果）": {
+    "tagName": "Invincible"
+  },
+  "吸血": {
+    "tagName": "Bloodsucker"
+  },
+  "強韌": {
+    "tagName": "Tough"
+  },
+  "反射": {
+    "tagName": "Reflection"
+  },
+  "連擊位置": {
+    "tagName": "Combo Position"
+  },
+  "雙劍特性說明": {
+    "tagName": "Dual Swords Characteristics Description"
+  },
+  "MP消耗減半": {
+    "tagName": "MP cost halves"
+  },
+  "即死": {
+    "tagName": "Immediate Kill"
+  },
+  "Graze": {
+    "tagName": "Graze"
+  },
+  "必定命中": {
+    "tagName": "Perfect Aim",
+    "frames": {
+      "category": [
+        "Effect"
+      ],
+      "caption": [
+        "When the skill with this effect hits a enemy, it will definitely not happen ((!MISS)) and #Graze ."
+      ],
+      "list": [
+        "Evasion and #invincible  will still occur."
+      ]
+    }
+  },
+  "施放武器": {
+    "tagName": "Weapon Used"
+  },
+  "法術暴擊轉化率": {
+    "tagName": "magic crt conversion rate"
+  }
+}
