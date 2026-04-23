@@ -6,13 +6,14 @@ import {
   type MaterialPointTypeRange,
 } from '@/lib/Enchant/Enchant'
 
-import type { EnchantData } from '@/data/types/enchant'
+import type { EnchantData, EnchantLocale } from '@/data/types/enchant'
 
 const CONDITION_LIST = ['主手武器', '身體裝備', '原有屬性']
 
-export function LoadEnchant(root: EnchantSystem, data: EnchantData) {
+export function LoadEnchant(root: EnchantSystem, data: EnchantData, locale?: EnchantLocale) {
   data.forEach(categoryEntry => {
-    const category = root.appendCategory(categoryEntry.title)
+    const title = locale?.[categoryEntry.title]?.title ?? categoryEntry.title
+    const category = root.appendCategory(title)
     if (categoryEntry.weaponOnly) {
       category.setWeaponOnly()
     }

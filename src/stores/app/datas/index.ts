@@ -19,7 +19,13 @@ import SkillSystem from '@/lib/Skill'
 import type { StatLocale } from '@/data/types/stats'
 import type { GlossaryLocale } from '@/data/types/glossary'
 import type { EquipmentLocale } from '@/data/types/equipment'
-import type { SkillMainLocale } from '@/data/types/skill'
+import type { SkillLocale, SkillMainLocale } from '@/data/types/skill'
+import type { CrystalLocale } from '@/data/types/crystal'
+import type { RegistletLocale } from '@/data/types/registlet'
+import type { QuestLocale } from '@/data/types/quest'
+import type { PotionLocale } from '@/data/types/potion'
+import type { EnchantLocale } from '@/data/types/enchant'
+import type { CharacterStatLocale } from '@/data/types/character-stats'
 
 import { DatasStoreBase } from './DatasStoreBase'
 import { DataStoreIds } from './enums'
@@ -114,17 +120,20 @@ export const useDatasStore = defineStore('app-datas', () => {
     switch (dataId) {
       case DataStoreIds.Items: {
         const itemSystem = initItemsInstance()
-        const [{ default: equipmentData }, { default: crystalData }, equipmentLocale] =
+        const [{ default: equipmentData }, { default: crystalData }, equipmentLocale, crystalLocale] =
           await Promise.all([
             import('@/data/equipment.json'),
             import('@/data/crystal.json'),
             loadLocale<EquipmentLocale>(primaryLang, suffix =>
               import(`@/data/equipment.${suffix}.json`)
             ),
+            loadLocale<CrystalLocale>(primaryLang, suffix =>
+              import(`@/data/crystal.${suffix}.json`)
+            ),
           ])
         return async () => {
           LoadEquipments(itemSystem, equipmentData as any, equipmentLocale)
-          LoadCrystals(itemSystem, crystalData as any)
+          LoadCrystals(itemSystem, crystalData as any, crystalLocale)
           await InitCrystalIcons()
         }
       }
@@ -143,9 +152,14 @@ export const useDatasStore = defineStore('app-datas', () => {
 
       case DataStoreIds.CharacterStats: {
         const characterSystem = initCharacterInstance()
-        const { default: data } = await import('@/data/character_stats.json')
+        const [{ default: data }, charStatsLocale] = await Promise.all([
+          import('@/data/character_stats.json'),
+          loadLocale<CharacterStatLocale>(primaryLang, suffix =>
+            import(`@/data/character_stats.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadCharacterStats(characterSystem, data as any)
+          LoadCharacterStats(characterSystem, data as any, charStatsLocale)
         }
       }
 
@@ -164,16 +178,19 @@ export const useDatasStore = defineStore('app-datas', () => {
 
       case DataStoreIds.Skill: {
         const skillSystem = initSkillInstance()
-        const [{ default: skillData }, { default: skillMainData }, skillMainLocale] =
+        const [{ default: skillData }, { default: skillMainData }, skillLocale, skillMainLocale] =
           await Promise.all([
             import('@/data/skill.json'),
             import('@/data/skill_main.json'),
+            loadLocale<SkillLocale>(primaryLang, suffix =>
+              import(`@/data/skill.${suffix}.json`)
+            ),
             loadLocale<SkillMainLocale>(primaryLang, suffix =>
               import(`@/data/skill_main.${suffix}.json`)
             ),
           ])
         return async () => {
-          LoadSkill(skillSystem, skillData as any)
+          LoadSkill(skillSystem, skillData as any, skillLocale)
           LoadSkillMain(skillSystem, skillMainData as any, skillMainLocale)
           const skillStore = useCharacterSkillStore()
           skillStore.initSkillRoot(skillSystem.skillRoot)
@@ -190,9 +207,14 @@ export const useDatasStore = defineStore('app-datas', () => {
 
       case DataStoreIds.Enchant: {
         const enchantSystem = initEnchantInstance()
-        const { default: data } = await import('@/data/enchant.json')
+        const [{ default: data }, enchantLocale] = await Promise.all([
+          import('@/data/enchant.json'),
+          loadLocale<EnchantLocale>(primaryLang, suffix =>
+            import(`@/data/enchant.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadEnchant(enchantSystem, data as any)
+          LoadEnchant(enchantSystem, data as any, enchantLocale)
         }
       }
 
@@ -203,25 +225,40 @@ export const useDatasStore = defineStore('app-datas', () => {
 
       case DataStoreIds.Registlet: {
         const registSystem = initRegistletInstance()
-        const { default: data } = await import('@/data/registlet.json')
+        const [{ default: data }, registletLocale] = await Promise.all([
+          import('@/data/registlet.json'),
+          loadLocale<RegistletLocale>(primaryLang, suffix =>
+            import(`@/data/registlet.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadRegistlet(registSystem, data as any)
+          LoadRegistlet(registSystem, data as any, registletLocale)
         }
       }
 
       case DataStoreIds.ItemsPotion: {
         const itemsSystem = initItemsInstance()
-        const { default: data } = await import('@/data/potion.json')
+        const [{ default: data }, potionLocale] = await Promise.all([
+          import('@/data/potion.json'),
+          loadLocale<PotionLocale>(primaryLang, suffix =>
+            import(`@/data/potion.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadPotions(itemsSystem.potionsRoot, data as any)
+          LoadPotions(itemsSystem.potionsRoot, data as any, potionLocale)
         }
       }
 
       case DataStoreIds.Quest: {
         const questSystem = initQuestInstance()
-        const { default: data } = await import('@/data/quest.json')
+        const [{ default: data }, questLocale] = await Promise.all([
+          import('@/data/quest.json'),
+          loadLocale<QuestLocale>(primaryLang, suffix =>
+            import(`@/data/quest.${suffix}.json`)
+          ),
+        ])
         return async () => {
-          LoadQuests(questSystem, data as any)
+          LoadQuests(questSystem, data as any, questLocale)
         }
       }
     }

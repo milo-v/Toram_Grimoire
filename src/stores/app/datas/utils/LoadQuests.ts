@@ -2,7 +2,7 @@ import QuestSystem from '@/lib/Quest'
 import { MainQuestChapter, MainQuestSection } from '@/lib/Quest/Quest'
 import { QuestItemType } from '@/lib/Quest/Quest/enums'
 
-import type { QuestData } from '@/data/types/quest'
+import type { QuestData, QuestLocale } from '@/data/types/quest'
 
 type HandleQuestItemCallback = (type: QuestItemType, name: string, quantity: number) => void
 
@@ -24,13 +24,15 @@ function handleQuestItem(data: string, cb: HandleQuestItemCallback) {
   })
 }
 
-export function LoadQuests(questSystem: QuestSystem, data: QuestData) {
+export function LoadQuests(questSystem: QuestSystem, data: QuestData, locale?: QuestLocale) {
   data.chapters.forEach(ch => {
-    questSystem.appendMainQuestChapter(new MainQuestChapter(ch.id, ch.name))
+    const name = locale?.[`chapter:${ch.id}`]?.name ?? ch.name
+    questSystem.appendMainQuestChapter(new MainQuestChapter(ch.id, name))
   })
 
   data.sections.forEach((sec, index) => {
-    const quest = new MainQuestSection(index, sec.chapter, sec.section, sec.name, sec.exp)
+    const name = locale?.[`section:${sec.chapter}:${sec.section}`]?.name ?? sec.name
+    const quest = new MainQuestSection(index, sec.chapter, sec.section, name, sec.exp)
     if (sec.skippable) {
       quest.setSkippableExp(sec.skippable.name, sec.skippable.exp)
     }

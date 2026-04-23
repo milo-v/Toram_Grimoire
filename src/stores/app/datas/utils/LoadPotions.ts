@@ -4,19 +4,23 @@ import {
   type BagPotionsRoot,
 } from '@/lib/Items/BagItem'
 
-import type { PotionData } from '@/data/types/potion'
+import type { PotionData, PotionLocale } from '@/data/types/potion'
 import { parseStatValueData } from './utils'
 
-export function LoadPotions(root: BagPotionsRoot, data: PotionData) {
+export function LoadPotions(root: BagPotionsRoot, data: PotionData, locale?: PotionLocale) {
   data.forEach(categoryEntry => {
     try {
-      const category = root.appendCategory(categoryEntry.id, categoryEntry.name)
+      const categoryName = locale?.[`category:${categoryEntry.id}`]?.name ?? categoryEntry.name
+      const category = root.appendCategory(categoryEntry.id, categoryName)
 
       categoryEntry.obtainCategories.forEach(obtainCatEntry => {
-        const obtainCategory = category.appendObtainCategory(obtainCatEntry.id, obtainCatEntry.name)
+        const obtainCatName =
+          locale?.[`obtainCategory:${obtainCatEntry.id}`]?.name ?? obtainCatEntry.name
+        const obtainCategory = category.appendObtainCategory(obtainCatEntry.id, obtainCatName)
 
         obtainCatEntry.potions.forEach(potionEntry => {
-          const potion = obtainCategory.appendPotion(potionEntry.name)
+          const potionName = locale?.[`potion:${potionEntry.name}`]?.name ?? potionEntry.name
+          const potion = obtainCategory.appendPotion(potionName)
 
           potionEntry.stats.forEach(stat => {
             const { value, type } = parseStatValueData(stat.value1)

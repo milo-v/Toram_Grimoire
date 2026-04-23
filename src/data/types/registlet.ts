@@ -29,3 +29,9 @@ export interface RegistletData {
   statCategory: RegistletCategory
   specialCategory: RegistletCategory
 }
+
+export interface RegistletLocale {
+  skill?: Record<string, { name?: string }>
+  stat?: Record<string, { name?: string }>
+  special?: Record<string, { name?: string }>
+}

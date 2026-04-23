@@ -22,3 +22,10 @@ export interface CharacterStatCategory {
 }
 
 export type CharacterStatData = CharacterStatCategory[]
+
+/** keyed by "section:name" or "stat:id" */
+export interface CharacterStatLocale {
+  [key: string]: {
+    name?: string
+  }
+}

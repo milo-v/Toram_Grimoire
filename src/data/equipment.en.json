@@ -8479,5 +8479,491 @@
   },
   "王獸之盾II": {
     "name": "Beastlord Shield II"
+  },
+  "三味線": {
+    "name": "Shamisen"
+  },
+  "三花貓絨絨帽": {
+    "name": "Calico Cat Fluffy Hat"
+  },
+  "伯爵變裝": {
+    "name": "Count Disguise"
+  },
+  "低簷帽": {
+    "name": "Low Brim Hat"
+  },
+  "假面禮帽": {
+    "name": "Masquerade Top Hat"
+  },
+  "傲慢頭鏈": {
+    "name": "Arrogance Head Chain"
+  },
+  "克萊因羽翼": {
+    "name": "Klein Wings"
+  },
+  "冬風斗篷": {
+    "name": "Winter Wind Cape"
+  },
+  "刺刺頸圈": {
+    "name": "Spiky Collar"
+  },
+  "古董腰帶": {
+    "name": "Antique Belt"
+  },
+  "同袍之杖": {
+    "name": "Comrade Staff"
+  },
+  "同袍拳刃": {
+    "name": "Comrade Knuckle Blade"
+  },
+  "哥德風巧克力帽": {
+    "name": "Gothic Chocolate Hat"
+  },
+  "商神杖": {
+    "name": "Caduceus"
+  },
+  "商隊的箭": {
+    "name": "Caravan Arrow"
+  },
+  "圍巾（一圈）": {
+    "name": "Scarf (One Loop)"
+  },
+  "圍巾（後結）": {
+    "name": "Scarf (Back Knot)"
+  },
+  "圓耳朵帽子": {
+    "name": "Round Ear Hat"
+  },
+  "垂耳髮箍": {
+    "name": "Floppy Ear Headband"
+  },
+  "大漁之翼": {
+    "name": "Abundant Catch Wings"
+  },
+  "天蝎之劍": {
+    "name": "Scorpio Sword"
+  },
+  "天蝎之杖": {
+    "name": "Scorpio Staff"
+  },
+  "妖怪斗篷": {
+    "name": "Yokai Cape"
+  },
+  "小魔物髮型": {
+    "name": "Little Monster Hairstyle"
+  },
+  "巧克力玫瑰": {
+    "name": "Chocolate Rose"
+  },
+  "巧克力眼鏡": {
+    "name": "Chocolate Glasses"
+  },
+  "巧克力筆頭飾": {
+    "name": "Chocolate Pen Headpiece"
+  },
+  "布偶的魔法書": {
+    "name": "Doll's Grimoire"
+  },
+  "平釘耳環": {
+    "name": "Flat Stud Earrings"
+  },
+  "庫貝之翼": {
+    "name": "Kube Wings"
+  },
+  "庫貝弓": {
+    "name": "Kube Bow"
+  },
+  "庫貝盾": {
+    "name": "Kube Shield"
+  },
+  "忍櫻披肩": {
+    "name": "Ninja Cherry Blossom Shawl"
+  },
+  "忍櫻護腕": {
+    "name": "Ninja Cherry Blossom Wristguard"
+  },
+  "快樂小花": {
+    "name": "Happy Little Flower"
+  },
+  "怪獸角": {
+    "name": "Monster Horns"
+  },
+  "悲靈質": {
+    "name": "Sorrowful Spirit"
+  },
+  "惠方卷單肩包": {
+    "name": "Ehomaki Shoulder Bag"
+  },
+  "惡作劇之槍": {
+    "name": "Prank Lance"
+  },
+  "惡魔頭飾": {
+    "name": "Demon Headpiece"
+  },
+  "愛心杯頭飾": {
+    "name": "Heart Cup Headpiece"
+  },
+  "扁面蛸帽子": {
+    "name": "Dumbo Octopus Hat"
+  },
+  "旋之翼": {
+    "name": "Spinning Wings"
+  },
+  "旋轉木馬傘": {
+    "name": "Carousel Umbrella"
+  },
+  "星塵耳環": {
+    "name": "Stardust Earrings"
+  },
+  "星屑之箭": {
+    "name": "Stardust Arrow"
+  },
+  "春晝帽子": {
+    "name": "Spring Day Hat"
+  },
+  "春晝頭飾": {
+    "name": "Spring Day Headpiece"
+  },
+  "時尚髮帶": {
+    "name": "Fashionable Headband"
+  },
+  "普通的蘋果": {
+    "name": "Ordinary Apple"
+  },
+  "晴天波姆娃娃": {
+    "name": "Sunny Day Pomut Doll"
+  },
+  "暖冬兜帽": {
+    "name": "Warm Winter Hood"
+  },
+  "暗騎鎧甲": {
+    "name": "Dark Knight Armor"
+  },
+  "暗黑之心蝴蝶結": {
+    "name": "Dark Heart Bow"
+  },
+  "木箭": {
+    "name": "Wooden Arrow"
+  },
+  "木靈護符": {
+    "name": "Wood Spirit Talisman"
+  },
+  "杜阿特面具": {
+    "name": "Duat Mask"
+  },
+  "束腰式長袖": {
+    "name": "Corseted Long Sleeve"
+  },
+  "杯子蛋糕頭飾": {
+    "name": "Cupcake Headpiece"
+  },
+  "格子鬆餅髮飾": {
+    "name": "Waffle Hair Ornament"
+  },
+  "格紋貝蕾帽": {
+    "name": "Plaid Beret"
+  },
+  "棉花糖髮箍": {
+    "name": "Marshmallow Headband"
+  },
+  "極光羽衣": {
+    "name": "Aurora Feather Robe"
+  },
+  "殤的盾牌": {
+    "name": "Shield of Sorrow"
+  },
+  "毛氈帽": {
+    "name": "Felt Hat"
+  },
+  "毛球針織帽": {
+    "name": "Pompom Knit Hat"
+  },
+  "毛絨絨的箭": {
+    "name": "Fluffy Arrow"
+  },
+  "民族項鏈": {
+    "name": "Ethnic Necklace"
+  },
+  "水果刀": {
+    "name": "Fruit Knife"
+  },
+  "波多姆達摩": {
+    "name": "Potoum Daruma"
+  },
+  "波姆特眼罩": {
+    "name": "Pomut Eye Patch"
+  },
+  "浮球拳": {
+    "name": "Floating Ball Knuckle"
+  },
+  "溪流之爪": {
+    "name": "Stream Claw"
+  },
+  "漁夫的寶器": {
+    "name": "Fisherman's Treasure"
+  },
+  "漁師問切刀": {
+    "name": "Fisherman's Inquiry Knife"
+  },
+  "炸雞頭套": {
+    "name": "Fried Chicken Head Cover"
+  },
+  "牽牛花飾": {
+    "name": "Morning Glory Ornament"
+  },
+  "狙擊手單眼鏡": {
+    "name": "Sniper Monocle"
+  },
+  "狛犬髮箍": {
+    "name": "Guardian Dog Hairband"
+  },
+  "王者腰帶": {
+    "name": "King's Belt"
+  },
+  "瑪瑙法杖": {
+    "name": "Agate Staff"
+  },
+  "甜蜜之心(右)": {
+    "name": "Sweet Heart (Right)"
+  },
+  "甜蜜之心(左)": {
+    "name": "Sweet Heart (Left)"
+  },
+  "甜醬油兔糰子": {
+    "name": "Sweet Soy Rabbit Dango"
+  },
+  "甜點師帽子": {
+    "name": "Pastry Chef Hat"
+  },
+  "白狐小包": {
+    "name": "White Fox Pouch"
+  },
+  "皇冠緞帶": {
+    "name": "Crown Ribbon"
+  },
+  "皮革束腰": {
+    "name": "Leather Corset"
+  },
+  "精靈帕克": {
+    "name": "Elf Parka"
+  },
+  "糰子頭飾": {
+    "name": "Dango Headpiece"
+  },
+  "紅弓": {
+    "name": "Red Bow"
+  },
+  "綠松石之劍": {
+    "name": "Turquoise Sword"
+  },
+  "綠松石盾": {
+    "name": "Turquoise Shield"
+  },
+  "老海盜帽": {
+    "name": "Old Pirate Hat"
+  },
+  "聖誕小熊包": {
+    "name": "Christmas Bear Bag"
+  },
+  "聖誕燭火": {
+    "name": "Christmas Candlelight"
+  },
+  "聖誕老人大帽子": {
+    "name": "Santa Big Hat"
+  },
+  "聖誕腕套": {
+    "name": "Christmas Wristband"
+  },
+  "聖誕領帶": {
+    "name": "Christmas Tie"
+  },
+  "肉墊包": {
+    "name": "Paw Pad Bag"
+  },
+  "肥皂泡泡": {
+    "name": "Soap Bubble"
+  },
+  "肩頭鹫鷹": {
+    "name": "Shoulder Griffon"
+  },
+  "腰間袍": {
+    "name": "Waist Robe"
+  },
+  "舞獅頭飾": {
+    "name": "Lion Dance Headpiece"
+  },
+  "苦味戒指": {
+    "name": "Bitter Ring"
+  },
+  "茶杯禮帽": {
+    "name": "Teacup Top Hat"
+  },
+  "草莓鮮奶油": {
+    "name": "Strawberry Whipped Cream"
+  },
+  "荷葉玫瑰": {
+    "name": "Lotus Rose"
+  },
+  "蒸氣龐克帽": {
+    "name": "Steampunk Hat"
+  },
+  "藍玫瑰帽": {
+    "name": "Blue Rose Hat"
+  },
+  "藍玫瑰耳飾": {
+    "name": "Blue Rose Earring"
+  },
+  "藍玫瑰髮圈": {
+    "name": "Blue Rose Hair Tie"
+  },
+  "藍羽頸圈": {
+    "name": "Blue Feather Collar"
+  },
+  "藍花裝飾假領": {
+    "name": "Blue Flower Decorative Collar"
+  },
+  "蘋果年輪蛋糕": {
+    "name": "Apple Baumkuchen"
+  },
+  "虎紋腕套": {
+    "name": "Tiger Stripe Wristband"
+  },
+  "虎紋領巾": {
+    "name": "Tiger Stripe Neckerchief"
+  },
+  "蛙嘴包": {
+    "name": "Frog Mouth Bag"
+  },
+  "蜘蛛斗篷": {
+    "name": "Spider Cape"
+  },
+  "蝙蝠花冠": {
+    "name": "Bat Crown"
+  },
+  "蝴蝶結耳墜": {
+    "name": "Bow Earrings"
+  },
+  "融化巧克力": {
+    "name": "Melting Chocolate"
+  },
+  "融化巧帽": {
+    "name": "Melting Choco Hat"
+  },
+  "蠟燭腦袋": {
+    "name": "Candle Head"
+  },
+  "衣兔護符": {
+    "name": "Rabbit Talisman"
+  },
+  "褶邊帽子": {
+    "name": "Ruffled Hat"
+  },
+  "調色刀": {
+    "name": "Palette Knife"
+  },
+  "貓咪布偶": {
+    "name": "Cat Doll"
+  },
+  "賞花獸的角": {
+    "name": "Flower Viewing Beast Horns"
+  },
+  "金平人蕈帽": {
+    "name": "Konpeito Mushroom Hat"
+  },
+  "金平刀": {
+    "name": "Konpeito Knife"
+  },
+  "金平糖之劍": {
+    "name": "Konpeito Sword"
+  },
+  "金燦燦的太陽鏡": {
+    "name": "Glittering Sunglasses"
+  },
+  "金燦燦的絨毛扇子": {
+    "name": "Glittering Plush Fan"
+  },
+  "鈴兒毛線帽": {
+    "name": "Bell Wool Hat"
+  },
+  "鉚釘手環": {
+    "name": "Rivet Bracelet"
+  },
+  "銀枝角之冠": {
+    "name": "Silver Branch Antler Crown"
+  },
+  "鏡餅頭冠": {
+    "name": "Kagami Mochi Crown"
+  },
+  "閃光螺栓": {
+    "name": "Flash Bolt"
+  },
+  "雙子之劍": {
+    "name": "Gemini Sword"
+  },
+  "雙子之盾": {
+    "name": "Gemini Shield"
+  },
+  "雞肉": {
+    "name": "Chicken"
+  },
+  "雪球頭套": {
+    "name": "Snowball Head Cover"
+  },
+  "雪絨圍巾": {
+    "name": "Snow Fleece Scarf"
+  },
+  "雪絨帽": {
+    "name": "Snow Fleece Hat"
+  },
+  "雲霧罩衣": {
+    "name": "Misty Shroud"
+  },
+  "霍夫面具": {
+    "name": "Hof Mask"
+  },
+  "霓虹儭裙": {
+    "name": "Neon Mini Skirt"
+  },
+  "靈鋒耳": {
+    "name": "Spirit Blade Ears"
+  },
+  "領主變裝": {
+    "name": "Lord Disguise"
+  },
+  "頭頂盆栽": {
+    "name": "Potted Plant on Head"
+  },
+  "頭頂菱紋企鵝": {
+    "name": "Diamond Pattern Penguin on Head"
+  },
+  "頭頂鯊寶寶": {
+    "name": "Baby Shark on Head"
+  },
+  "香菇武士": {
+    "name": "Mushroom Warrior"
+  },
+  "魔法箭": {
+    "name": "Magic Arrow"
+  },
+  "鯛魚燒": {
+    "name": "Taiyaki"
+  },
+  "鯰魚掛飾": {
+    "name": "Catfish Pendant"
+  },
+  "鱗甲頭盔": {
+    "name": "Scale Armor Helmet"
+  },
+  "鳳梨帽": {
+    "name": "Pineapple Hat"
+  },
+  "黃豆粉耳罩": {
+    "name": "Kinako Earmuffs"
+  },
+  "黏人拉比兔": {
+    "name": "Clingy Rabi Rabbit"
+  },
+  "黑戲刀": {
+    "name": "Black Trick Blade"
   }
 }

@@ -18,3 +18,10 @@ export interface QuestData {
   chapters: QuestChapter[]
   sections: QuestSection[]
 }
+
+/** keyed by "chapter:id" or "section:chapter:section" */
+export interface QuestLocale {
+  [key: string]: {
+    name?: string
+  }
+}

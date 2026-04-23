@@ -44,6 +44,9 @@
   "atk": {
     "caption": "ATK"
   },
+  "atk_sub": {
+    "caption": "Sub ATK (Dual Sword)"
+  },
   "matk": {
     "caption": "MATK"
   },
@@ -57,7 +60,7 @@
     "caption": "Weapon Range"
   },
   "physical_pierce": {
-    "caption": "Physical  Pierce"
+    "caption": "Physical Pierce"
   },
   "magic_pierce": {
     "caption": "Magic Pierce"
@@ -204,7 +207,7 @@
     "caption": "Physical Barrier"
   },
   "magical_barrier": {
-    "caption": "magical Barrier"
+    "caption": "Magical Barrier"
   },
   "fractional_barrier": {
     "caption": "Fractional Barrier"
@@ -216,7 +219,7 @@
     "caption": "Reflect"
   },
   "additional_meele": {
-    "caption": "Additional Meele"
+    "caption": "Additional Melee"
   },
   "additional_magic": {
     "caption": "Additional Magic"
@@ -261,138 +264,159 @@
     "caption": "Element Dark"
   },
   "element_mana": {
-    "caption": "Absolute Dodge"
+    "caption": "Element Mana"
   },
   "absolute_dodge": {
-    "caption": "Absolute Accuracy"
+    "caption": "Absolute Dodge"
   },
   "absolute_accuracy": {
-    "caption": "Reduce DMG (floor)"
+    "caption": "Absolute Accuracy"
   },
   "reduce_dmg_floor": {
-    "caption": "Reduce DMG (meteor)"
+    "caption": "Reduce DMG (Floor)"
   },
   "reduce_dmg_meteor": {
-    "caption": "Reduce DMG (player epicenter)"
+    "caption": "Reduce DMG (Meteor)"
   },
   "reduce_player_epicenter": {
-    "caption": "Reduce DMG (foe epicenter)"
+    "caption": "Reduce DMG (Player AoE)"
   },
   "reduce_dmg_foe_epicenter": {
-    "caption": "Reduce DMG (bowling)"
+    "caption": "Reduce DMG (Foe AoE)"
   },
   "reduce_dmg_bowling": {
-    "caption": "Reduce DMG (bullet)"
+    "caption": "Reduce DMG (Bowling)"
   },
   "reduce_dmg_bullet": {
-    "caption": "Reduce DMG (straight line)"
+    "caption": "Reduce DMG (Bullet)"
   },
   "reduce_dmg_straight_line": {
-    "caption": "Reduce DMG (charge)"
+    "caption": "Reduce DMG (Straight Line)"
   },
   "reduce_dmg_charge": {
-    "caption": "Reduce Explosion"
+    "caption": "Reduce DMG (Charge)"
+  },
+  "reduce_dmg_explosion": {
+    "caption": "Reduce DMG (Explosion)"
   },
   "reduce_dmg_gravity": {
-    "caption": "ATK up (STR)"
+    "caption": "Reduce DMG (Gravity)"
   },
   "atk_up_str": {
-    "caption": "ATK up (DEX)"
+    "caption": "ATK up (STR)"
   },
   "atk_up_dex": {
-    "caption": "ATK up (INT)"
+    "caption": "ATK up (DEX)"
   },
   "atk_up_int": {
-    "caption": "ATK up (AGI)"
+    "caption": "ATK up (INT)"
   },
   "atk_up_agi": {
-    "caption": "ATK up (VIT)"
+    "caption": "ATK up (AGI)"
   },
   "atk_up_vit": {
-    "caption": "MATK up (STR)"
+    "caption": "ATK up (VIT)"
   },
   "matk_up_str": {
-    "caption": "NATK up (DEX)"
+    "caption": "MATK up (STR)"
   },
   "matk_up_dex": {
-    "caption": "MATK up (INT)"
+    "caption": "MATK up (DEX)"
   },
   "matk_up_int": {
-    "caption": "MATK up (AGI)"
+    "caption": "MATK up (INT)"
   },
   "matk_up_agi": {
-    "caption": "MATK up (VIT)"
+    "caption": "MATK up (AGI)"
   },
   "matk_up_vit": {
-    "caption": "ATK down (STR)"
+    "caption": "MATK up (VIT)"
   },
   "atk_down_str": {
-    "caption": "ATK down (DEX)"
+    "caption": "ATK down (STR)"
   },
   "atk_down_dex": {
-    "caption": "ATK down (INT)"
+    "caption": "ATK down (DEX)"
   },
   "atk_down_int": {
-    "caption": "ATK down (AGI)"
+    "caption": "ATK down (INT)"
   },
   "atk_down_agi": {
-    "caption": "ATK down (VIT)"
+    "caption": "ATK down (AGI)"
   },
   "atk_down_vit": {
-    "caption": "MATK down (STR)"
+    "caption": "ATK down (VIT)"
   },
   "matk_down_str": {
-    "caption": "MATK down (DEX)"
+    "caption": "MATK down (STR)"
   },
   "matk_down_dex": {
-    "caption": "MATK down (INT)"
+    "caption": "MATK down (DEX)"
   },
   "matk_down_int": {
-    "caption": "MATK down (AGI)"
+    "caption": "MATK down (INT)"
   },
   "matk_down_agi": {
-    "caption": "MATK down (VIT)"
+    "caption": "MATK down (AGI)"
   },
   "matk_down_vit": {
-    "caption": "invincible aid (sec)"
+    "caption": "MATK down (VIT)"
   },
   "invincible_aid_sec": {
-    "caption": "Pet EXP"
+    "caption": "Invincible Aid (s)"
   },
   "pet_exp": {
-    "caption": "Item Cooldown"
+    "caption": "Pet EXP"
   },
   "item_cooldown": {
-    "caption": "Skill Constant"
+    "caption": "Item Cooldown"
   },
   "skill_constant_extra": {
-    "caption": "magic crt conversion rate"
+    "caption": "Skill Constant"
   },
   "magic_crt_percentage": {
-    "caption": "magic crt damage conversion rate"
+    "caption": "Magic Crit Conversion Rate"
   },
   "magic_cd_percentage": {
-    "caption": "normal attack multiplier"
+    "caption": "Magic Crit Damage Conversion Rate"
   },
   "normal_attack_multiplier": {
-    "caption": "normal attack constant"
+    "caption": "Normal Attack Multiplier"
   },
   "normal_attack_constant": {
-    "caption": "Gem Powder Drop"
+    "caption": "Normal Attack Constant"
   },
   "gempowder_drop_add": {
-    "caption": "Total Skill Multiplier"
+    "caption": "Gem Powder Drop"
   },
   "total_skill_multiplier": {
-    "caption": "Skill Multiplier"
+    "caption": "Total Skill Multiplier"
   },
   "skill_multiplier_extra": {
+    "caption": "Skill Multiplier"
+  },
+  "graze_penalty_mitigation": {
     "caption": "Mitigate Graze Penalty"
   },
+  "magic_stronger_against_element": {
+    "caption": "Magic Extra Element Damage"
+  },
   "ailment_avoid": {
+    "caption": "Ailment Evasion"
+  },
+  "base_guard_power": {
     "caption": "Base Guard Power"
   },
   "base_guard_regenerate": {
+    "caption": "Base Guard Recharge"
+  },
+  "base_evasion_regenerate": {
     "caption": "Base Evasion Recharge"
+  },
+  "dual_bringer_efficiency": {
+    "caption": "Dual Bringer Efficiency"
+  },
+  "dual_bringer_penalty": {
+    "caption": "Dual Bringer Penalty"
   }
 }

@@ -13,7 +13,7 @@ import {
 } from '@/lib/Skill/Skill'
 import { SkillBranchNames } from '@/lib/Skill/Skill'
 
-import type { SkillData, SkillMainData, SkillMainLocale } from '@/data/types/skill'
+import type { SkillData, SkillLocale, SkillMainData, SkillMainLocale } from '@/data/types/skill'
 
 const DEFAULT_SET_LIST = ['預設', '非預設', '預設/and', '非預設/and', '歷史紀錄']
 const MAIN_WEAPON_LIST = [
@@ -29,18 +29,23 @@ const ACTION_TIME_LIST = ['極慢', '慢', '稍慢', '一般', '稍快', '快', 
 const checkNull = <T extends number | string>(value: T, nullValue: T): T | null =>
   value === nullValue ? null : value
 
-export function LoadSkill(skillSystem: SkillSystem, data: SkillData) {
+export function LoadSkill(skillSystem: SkillSystem, data: SkillData, locale?: SkillLocale) {
   const skillRoot = skillSystem.skillRoot
 
   data.forEach(catEntry => {
-    const category = skillRoot.appendSkillTreeCategory(catEntry.id, catEntry.name)
+    const catName = locale?.[`category:${catEntry.id}`]?.name ?? catEntry.name
+    const category = skillRoot.appendSkillTreeCategory(catEntry.id, catName)
 
     catEntry.trees.forEach(treeEntry => {
-      const tree = category.appendSkillTree(treeEntry.id, treeEntry.name)
+      const treeName = locale?.[`tree:${catEntry.id}:${treeEntry.id}`]?.name ?? treeEntry.name
+      const tree = category.appendSkillTree(treeEntry.id, treeName)
       if (treeEntry.simulatorFlag) tree.attrs.simulatorFlag = true
 
       treeEntry.skills.forEach(skillEntry => {
-        const skill = tree.appendSkill(skillEntry.id, skillEntry.name)
+        const skillName =
+          locale?.[`skill:${catEntry.id}:${treeEntry.id}:${skillEntry.id}`]?.name ??
+          skillEntry.name
+        const skill = tree.appendSkill(skillEntry.id, skillName)
 
         skillEntry.effects.forEach(effectEntry => {
           const defaultSelected = DEFAULT_SET_LIST.indexOf(effectEntry.defaultSet)

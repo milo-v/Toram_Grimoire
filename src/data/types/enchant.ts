@@ -22,3 +22,10 @@ export interface EnchantCategory {
 }
 
 export type EnchantData = EnchantCategory[]
+
+/** keyed by zh-TW title */
+export interface EnchantLocale {
+  [title: string]: {
+    title?: string
+  }
+}

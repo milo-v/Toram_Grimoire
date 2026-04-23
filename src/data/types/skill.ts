@@ -66,3 +66,10 @@ export interface SkillMainLocale {
     name?: string
   }
 }
+
+/** keyed by "category:catId", "tree:catId:treeId", or "skill:catId:treeId:skillId" */
+export interface SkillLocale {
+  [key: string]: {
+    name?: string
+  }
+}

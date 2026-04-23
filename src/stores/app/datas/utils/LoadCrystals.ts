@@ -1,13 +1,14 @@
 import ItemsSystem from '@/lib/Items'
 import { BagCrystal, type BagItemObtain } from '@/lib/Items/BagItem'
 
-import type { CrystalData } from '@/data/types/crystal'
+import type { CrystalData, CrystalLocale } from '@/data/types/crystal'
 import { parseStatValueData } from './utils'
 
-export function LoadCrystals(root: ItemsSystem, data: CrystalData) {
+export function LoadCrystals(root: ItemsSystem, data: CrystalData, locale?: CrystalLocale) {
   data.forEach(entry => {
     try {
-      const crystal = root.appendCrystal(entry.name, entry.type, entry.bossType)
+      const name = locale?.[entry.name]?.name ?? entry.name
+      const crystal = root.appendCrystal(name, entry.type, entry.bossType)
 
       entry.stats.forEach(stat => {
         const { value, type } = parseStatValueData(stat.value1)
@@ -20,7 +21,8 @@ export function LoadCrystals(root: ItemsSystem, data: CrystalData) {
       })
 
       if (entry.enhancer) {
-        crystal.setEnhancer(entry.enhancer)
+        const enhancerName = locale?.[entry.enhancer]?.name ?? entry.enhancer
+        crystal.setEnhancer(enhancerName)
       }
     } catch (error) {
       console.warn('[LoadCrystals] unknown error', entry, error)

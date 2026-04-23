@@ -13,20 +13,23 @@ import {
 } from '@/lib/Registlet/RegistletItem'
 import { Skill } from '@/lib/Skill/Skill'
 
-import type { RegistletData } from '@/data/types/registlet'
+import type { RegistletData, RegistletLocale } from '@/data/types/registlet'
 
 function loadCategory(
   root: RegistletSystem,
   category: RegistletCategory<RegistletItemBase>,
   categoryData: RegistletData['skillCategory'],
   isSkill: boolean,
-  isStat: boolean
+  isStat: boolean,
+  localeSection?: Record<string, { name?: string }>
 ) {
   categoryData.groups.forEach(group => {
     group.items.forEach(itemEntry => {
+      const compositeId = isSkill ? `-${group.groupId}-${itemEntry.id}` : itemEntry.id
+      const localeName = localeSection?.[compositeId]?.name
       const infos: RegistletInfos = {
-        id: isSkill ? `-${group.groupId}-${itemEntry.id}` : itemEntry.id,
-        name: itemEntry.name,
+        id: compositeId,
+        name: localeName ?? itemEntry.name,
         obtainLevels: itemEntry.obtainLevels,
         maxLevel: itemEntry.maxLevel,
         powderCost: itemEntry.powderCost,
@@ -78,8 +81,8 @@ function loadCategory(
   })
 }
 
-export function LoadRegistlet(root: RegistletSystem, data: RegistletData) {
-  loadCategory(root, root.skillCategory, data.skillCategory, true, false)
-  loadCategory(root, root.statCategory, data.statCategory, false, true)
-  loadCategory(root, root.specialCategory, data.specialCategory, false, false)
+export function LoadRegistlet(root: RegistletSystem, data: RegistletData, locale?: RegistletLocale) {
+  loadCategory(root, root.skillCategory, data.skillCategory, true, false, locale?.skill)
+  loadCategory(root, root.statCategory, data.statCategory, false, true, locale?.stat)
+  loadCategory(root, root.specialCategory, data.specialCategory, false, false, locale?.special)
 }

@@ -22,3 +22,10 @@ export interface CrystalEntry {
 }
 
 export type CrystalData = CrystalEntry[]
+
+/** keyed by crystal name in zh-TW */
+export interface CrystalLocale {
+  [crystalName: string]: {
+    name?: string
+  }
+}

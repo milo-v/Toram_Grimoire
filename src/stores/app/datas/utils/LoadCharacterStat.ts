@@ -7,20 +7,26 @@ import {
   CharacterStatFormula,
 } from '@/lib/Character/Character'
 
-import type { CharacterStatData } from '@/data/types/character-stats'
+import type { CharacterStatData, CharacterStatLocale } from '@/data/types/character-stats'
 
-export function LoadCharacterStats(characterSystem: CharacterSystem, data: CharacterStatData) {
+export function LoadCharacterStats(
+  characterSystem: CharacterSystem,
+  data: CharacterStatData,
+  locale?: CharacterStatLocale
+) {
   data.forEach(categoryEntry => {
-    const category = characterSystem.appendCharacterStatCategory(categoryEntry.name)
+    const categoryName = locale?.[`section:${categoryEntry.name}`]?.name ?? categoryEntry.name
+    const category = characterSystem.appendCharacterStatCategory(categoryName)
 
     categoryEntry.stats.forEach(statEntry => {
+      const statName = locale?.[`stat:${statEntry.id}`]?.name ?? statEntry.name
       const [minStr, maxStr] = statEntry.limit.split('~')
       const min = isNumberString(minStr) ? parseFloat(minStr) : null
       const max = isNumberString(maxStr) ? parseFloat(maxStr) : null
 
       const stat = category.appendStat({
         id: statEntry.id,
-        name: statEntry.name,
+        name: statName,
         displayFormula: statEntry.displayFormula,
         link: statEntry.link,
         max,

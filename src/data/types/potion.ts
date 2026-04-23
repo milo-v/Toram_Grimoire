@@ -19,3 +19,10 @@ export interface PotionCategory {
 }
 
 export type PotionData = PotionCategory[]
+
+/** keyed by "category:id", "obtainCategory:id", or "potion:name" */
+export interface PotionLocale {
+  [key: string]: {
+    name?: string
+  }
+}
