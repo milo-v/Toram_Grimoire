@@ -102,7 +102,7 @@
           </template>
           <div v-if="column.title === 'author'" class="mt-3 px-3">
             <a
-              href="https://github.com/aishimeth2135/Toram_Grimoire"
+              href="https://github.com/milo-v/Toram_Grimoire"
               target="_blank"
               class="text-cyan-60 inline-flex items-center opacity-75 duration-150 hover:opacity-100"
             >
@@ -156,11 +156,11 @@ const columns: {
     list: [
       {
         title: 'toram-id',
-        list: ['Cyteria'],
+        list: ['MiLo (this fork)', 'Cyteria (original)'],
       },
       {
         title: 'grimoire-email',
-        list: ['Cyteria.Grimoire@gmail.com'],
+        list: ['grimoire@milov.anonaddy.com (this fork)', 'Cyteria.Grimoire@gmail.com (original)'],
       },
     ],
   },

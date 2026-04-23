@@ -16,7 +16,7 @@ loading-message:
     '1': Please refresh the website first if any errors occur.
   init-locale: Loading Locale
 page-title:
-  base: "Cy's Grimoire"
+  base: "Cy's Grimoire — MiLo's Edition"
   character-simulator: Character Simulator
   skill-simulator: Skill Simulator
   skill-query: Skill Info
@@ -94,11 +94,11 @@ features:
   copy-url-to-clipboard-success-tips: URL copied to clipboard.
 about:
   author:
-    sub-title: Doll.
+    sub-title: MiLo's Edition — fork of Cy's Grimoire by Cyteria
     title: Author
     toram-id: Toram ID
-    grimoire-email: Grimoire Email
-    github-message: If you have time, you can click here to help me
+    grimoire-email: Contact Email
+    github-message: Contribute or report issues on GitHub
   team:
     title: Team
     main: Core members

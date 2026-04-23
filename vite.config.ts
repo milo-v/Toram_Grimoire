@@ -82,8 +82,8 @@ export default defineConfig(({ mode }) => {
 
 function getPWAManifestConfig(): Partial<ManifestOptions> {
   return {
-    short_name: 'Grimoire',
-    name: 'Toram Grimoire',
+    short_name: "MiLo's Grimoire",
+    name: "Cy's Grimoire — MiLo's Edition",
     icons: [
       {
         src: '/android-chrome-192x192.png',
