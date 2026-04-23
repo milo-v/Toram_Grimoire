@@ -1,0 +1,3742 @@
+[
+  {
+    "type": "0",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 22
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 23
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 19,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 20,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": 21,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 23,
+    "name": "",
+    "previousSkill": 22,
+    "drawOrder": 4
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 22
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 24
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 23,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 24,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 23
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 20,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 22
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 23
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 23,
+    "name": "",
+    "previousSkill": 21,
+    "drawOrder": 16
+  },
+  {
+    "type": "1",
+    "id": 3,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 13
+  },
+  {
+    "type": "1",
+    "id": 4,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 19,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 19,
+    "drawOrder": 20
+  },
+  {
+    "type": "1",
+    "id": 5,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 19,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 20,
+    "drawOrder": 13
+  },
+  {
+    "type": "1",
+    "id": 6,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 22
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": 19,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": 20,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": 21,
+    "drawOrder": 21
+  },
+  {
+    "type": "1",
+    "id": 7,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 9
+  },
+  {
+    "type": "1",
+    "id": 8,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 14,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 15,
+    "drawOrder": 16
+  },
+  {
+    "type": "0",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 5
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 9
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 10
+  },
+  {
+    "type": "1",
+    "id": 3,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 4,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 16
+  },
+  {
+    "type": "1",
+    "id": 5,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 6,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 7,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "0",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 12
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 12,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 13,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 8
+  },
+  {
+    "type": "0",
+    "id": 3,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": 14,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 22
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "0",
+    "id": 4,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 7
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": 11,
+    "drawOrder": 14
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "1",
+    "id": 3,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "1",
+    "id": 4,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 11
+  },
+  {
+    "type": "1",
+    "id": 5,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 3
+  },
+  {
+    "type": "1",
+    "id": 6,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "1",
+    "id": 7,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 2,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 4,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": 6,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": 9,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": 10,
+    "drawOrder": 11
+  },
+  {
+    "type": "1",
+    "id": 8,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": 1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": 3,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": 0,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": 5,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": 7,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": 8,
+    "drawOrder": 8
+  },
+  {
+    "type": "0",
+    "id": 5,
+    "name": ""
+  },
+  {
+    "type": "1",
+    "id": 0,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "1",
+    "id": 1,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 11
+  },
+  {
+    "type": "",
+    "id": 12,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 12
+  },
+  {
+    "type": "",
+    "id": 13,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 13
+  },
+  {
+    "type": "",
+    "id": 14,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 14
+  },
+  {
+    "type": "",
+    "id": 15,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 15
+  },
+  {
+    "type": "",
+    "id": 16,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 16
+  },
+  {
+    "type": "",
+    "id": 17,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 17
+  },
+  {
+    "type": "",
+    "id": 18,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 18
+  },
+  {
+    "type": "",
+    "id": 19,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 19
+  },
+  {
+    "type": "",
+    "id": 20,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 20
+  },
+  {
+    "type": "",
+    "id": 21,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 21
+  },
+  {
+    "type": "",
+    "id": 22,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 22
+  },
+  {
+    "type": "",
+    "id": 23,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 23
+  },
+  {
+    "type": "",
+    "id": 24,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 24
+  },
+  {
+    "type": "1",
+    "id": 2,
+    "name": ""
+  },
+  {
+    "type": "",
+    "id": 0,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 0
+  },
+  {
+    "type": "",
+    "id": 1,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 5
+  },
+  {
+    "type": "",
+    "id": 2,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 1
+  },
+  {
+    "type": "",
+    "id": 3,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 6
+  },
+  {
+    "type": "",
+    "id": 4,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 2
+  },
+  {
+    "type": "",
+    "id": 5,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 7
+  },
+  {
+    "type": "",
+    "id": 6,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 3
+  },
+  {
+    "type": "",
+    "id": 11,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 8
+  },
+  {
+    "type": "",
+    "id": 7,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 4
+  },
+  {
+    "type": "",
+    "id": 8,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 9
+  },
+  {
+    "type": "",
+    "id": 9,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 10
+  },
+  {
+    "type": "",
+    "id": 10,
+    "name": "",
+    "previousSkill": -1,
+    "drawOrder": 11
+  }
+]
