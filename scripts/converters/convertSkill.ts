@@ -63,7 +63,8 @@ export function convertSkill(csv: CsvData): SkillData {
 
       if (defaultSet === HISTORY_SET) {
         const prevEffect = curEffect
-        const targetEffectId = parseInt(row[3]) || -1
+        const parsedTargetId = parseInt(row[3])
+        const targetEffectId = isNaN(parsedTargetId) ? -1 : parsedTargetId
         const historyDate = row[4] ?? ''
         curEffect = {
           defaultSet,

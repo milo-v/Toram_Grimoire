@@ -53,10 +53,12 @@ export function LoadSkill(skillSystem: SkillSystem, data: SkillData, locale?: Sk
 
           let effect: SkillEffect | SkillEffectHistory
           if (defaultSelected === 4) {
-            effect = skill.appendSkillEffectHistory(
-              effectEntry.historyTargetEffectId ?? -1,
-              effectEntry.historyDate ?? ''
-            )
+            // historyTargetEffectId of -1 is a converter artifact: parseInt('0') || -1 = -1,
+            // so -1 actually means effectId 0 (the first effect).
+            const targetId = (effectEntry.historyTargetEffectId ?? -1) < 0 ? 0 : effectEntry.historyTargetEffectId!
+            const historyEffect = skill.appendSkillEffectHistory(targetId, effectEntry.historyDate ?? '')
+            if (!historyEffect) return
+            effect = historyEffect
           } else {
             const mainWeapon = MAIN_WEAPON_LIST.indexOf(effectEntry.mainWeapon)
             const subWeapon = SUB_WEAPON_LIST.indexOf(effectEntry.subWeapon)
