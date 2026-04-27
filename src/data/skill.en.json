@@ -3,7 +3,7 @@
     "name": "Weapon Skills"
   },
   "tree:0:0": {
-    "name": "Sword Skills"
+    "name": "Blade Skills"
   },
   "skill:0:0:0": {
     "name": "Power Attack"
@@ -78,7 +78,7 @@
     "name": "Monster Slash"
   },
   "tree:0:1": {
-    "name": "Shooting Skills"
+    "name": "Shot Skills"
   },
   "skill:0:1:0": {
     "name": "Power Shot"
@@ -231,7 +231,7 @@
     "name": "Resonance Tuning"
   },
   "tree:0:3": {
-    "name": "Martial Arts Skills"
+    "name": "Martial Skills"
   },
   "skill:0:3:0": {
     "name": "Heavy Strike"
@@ -540,7 +540,7 @@
     "name": "Fountain Kick"
   },
   "tree:0:8": {
-    "name": "Soul Skills"
+    "name": "Sprite Skills"
   },
   "skill:0:8:0": {
     "name": "Revive"
@@ -660,7 +660,7 @@
     "name": "Siege"
   },
   "tree:1:2": {
-    "name": "Blade Skills"
+    "name": "Dagger Skills"
   },
   "skill:1:2:0": {
     "name": "Dagger Throw"
@@ -696,7 +696,7 @@
     "name": "Fear Blade"
   },
   "tree:1:3": {
-    "name": "Knighthood"
+    "name": "Knight Skills"
   },
   "skill:1:3:0": {
     "name": "Charge"
@@ -987,7 +987,7 @@
     "name": "Lightning Reflexes"
   },
   "tree:2:1": {
-    "name": "Warmonger"
+    "name": "Battle Skills"
   },
   "skill:2:1:0": {
     "name": "Mana Up"
@@ -1035,7 +1035,7 @@
     "name": "Supreme Mastery"
   },
   "tree:2:2": {
-    "name": "Survival Instinct"
+    "name": "Survival Skills"
   },
   "skill:2:2:0": {
     "name": "Play Dead"
@@ -1068,7 +1068,7 @@
     "name": "Production Skills"
   },
   "tree:3:0": {
-    "name": "Blacksmithing Master"
+    "name": "Blacksmith Skill"
   },
   "skill:3:0:0": {
     "name": "Refine Equipment"
@@ -1140,7 +1140,7 @@
     "name": "Mana Element Knowledge"
   },
   "tree:3:1": {
-    "name": "Alchemist"
+    "name": "Alchemy Skill"
   },
   "skill:3:1:0": {
     "name": "Synthesize Items"
@@ -1188,7 +1188,7 @@
     "name": "Synthesis Enhancement III"
   },
   "tree:3:2": {
-    "name": "Beast Tamer"
+    "name": "Tamer Skill"
   },
   "skill:3:2:0": {
     "name": "Capture"
@@ -1215,7 +1215,7 @@
     "name": "Skill Books"
   },
   "tree:4:0": {
-    "name": "Dark Power"
+    "name": "Dark Power Skills"
   },
   "skill:4:0:0": {
     "name": "Blood Bite"
@@ -1290,7 +1290,7 @@
     "name": "Magic Film"
   },
   "tree:4:2": {
-    "name": "Dancer"
+    "name": "Dancer Skills"
   },
   "skill:4:2:0": {
     "name": "Fairy Dance"
@@ -1314,7 +1314,7 @@
     "name": "Ephemeral Dance"
   },
   "tree:4:3": {
-    "name": "Bard"
+    "name": "Minstrel Skills"
   },
   "skill:4:3:0": {
     "name": "Healing Song"
@@ -1347,7 +1347,7 @@
     "name": "Battle Rhapsody"
   },
   "tree:4:4": {
-    "name": "Barehanded Combat"
+    "name": "Barehand Skills"
   },
   "skill:4:4:0": {
     "name": "Barehanded Mastery"
@@ -1401,7 +1401,7 @@
     "name": "Ninjutsu Training II"
   },
   "tree:4:6": {
-    "name": "Guerrilla Skills"
+    "name": "Partisan Skills"
   },
   "skill:4:6:0": {
     "name": "L Boomerang"
@@ -1431,7 +1431,7 @@
     "name": "Frontline Support II"
   },
   "tree:4:7": {
-    "name": "Necromancy"
+    "name": "Necromancer Skills"
   },
   "skill:4:7:0": {
     "name": "Gravedigger"
@@ -1608,7 +1608,7 @@
     "name": "Seal Piercer"
   },
   "tree:5:2": {
-    "name": "Ninjutsu Table"
+    "name": "Scroll Skills"
   },
   "skill:5:2:0": {
     "name": "Fire Style"
