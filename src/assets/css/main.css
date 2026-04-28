@@ -10,9 +10,9 @@
   --app-side-menu-minimize-width: 56px;
   --app-main-content-width: 768px;
   --app-main-content-padding-x: 32px;
-  --app-favicon-color-main: #ffa4c5;
-  --app-favicon-color-sub: #f7e4eb;
-  --app-body-bg-color: #fefcfd;
+  --app-favicon-color-main: #7db8f5;
+  --app-favicon-color-sub: #d4e8fd;
+  --app-body-bg-color: #fafcff;
 
   --app-white: #ffffff;
   --app-black: #171717;
@@ -96,16 +96,16 @@
   --app-gray-70: #314158;
   --app-gray-80: #1d293d;
   --app-gray-90: #0f172b;
-  --app-primary-5: #f8fafc;
-  --app-primary-10: #f1f5f9;
-  --app-primary-20: #e2e8f0;
-  --app-primary-30: #cad5e2;
-  --app-primary-40: #90a1b9;
-  --app-primary-50: #62748e;
-  --app-primary-60: #45556c;
-  --app-primary-70: #314158;
-  --app-primary-80: #1d293d;
-  --app-primary-90: #0f172b;
+  --app-primary-5: #f0f8ff;
+  --app-primary-10: #dbeeff;
+  --app-primary-20: #bbd9fe;
+  --app-primary-30: #90bffb;
+  --app-primary-40: #5e9fef;
+  --app-primary-50: #3b82db;
+  --app-primary-60: #2966c0;
+  --app-primary-70: #1d50a0;
+  --app-primary-80: #153d7e;
+  --app-primary-90: #0e2d5e;
 }
 
 @media screen and (max-width: 1440px) {
@@ -116,9 +116,9 @@
 }
 
 html.theme--night-mode {
-  --app-favicon-color-main: #ffabbb;
-  --app-favicon-color-sub: #efdae0;
-  --app-body-bg-color: #241f2c;
+  --app-favicon-color-main: #7aaace;
+  --app-favicon-color-sub: #c8ddf0;
+  --app-body-bg-color: #1a2030;
 
   --app-white: #171717;
   --app-black: #ffffff;
@@ -202,16 +202,16 @@ html.theme--night-mode {
   --app-gray-70: #f4f6f7;
   --app-gray-80: #f9fafb;
   --app-gray-90: #fcfdfd;
-  --app-primary-5: #0e1117;
-  --app-primary-10: #252b35;
-  --app-primary-20: #444d59;
-  --app-primary-30: #626b78;
-  --app-primary-40: #8e959f;
-  --app-primary-50: #c8ccd3;
-  --app-primary-60: #eaedf0;
-  --app-primary-70: #f4f6f7;
-  --app-primary-80: #f9fafb;
-  --app-primary-90: #fcfdfd;
+  --app-primary-5: #0e1a2e;
+  --app-primary-10: #162840;
+  --app-primary-20: #1e3d5e;
+  --app-primary-30: #2b587e;
+  --app-primary-40: #4278a8;
+  --app-primary-50: #7aaace;
+  --app-primary-60: #a8c8e4;
+  --app-primary-70: #c8ddf0;
+  --app-primary-80: #e0edf8;
+  --app-primary-90: #f2f7fc;
 }
 
 html {
