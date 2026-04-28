@@ -128,6 +128,10 @@ skill-build:
     - The skill image below is auto-generated. Press the button to download it directly.
     - On iOS, some browsers do not support setting a filename when downloading images. If the downloaded file does not have a .png extension, please rename it to "XXX.png" manually.
     - If you cannot download the image via the button, use your browser's default image saving method. For example, on desktop, right-click the image and select Save.
+  share-url-tab: Share link
+  share-url-copy: Copy the link below to share this build.
+  share-url-loaded: Build loaded from shared link.
+  share-url-load-failed: Could not load the shared build link.
 character-damage:
   title: Damage calculation
   target-options-title: Target stat settings

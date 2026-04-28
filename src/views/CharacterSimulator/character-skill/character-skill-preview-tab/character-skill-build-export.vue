@@ -1,15 +1,17 @@
 <script lang="ts" setup>
 import { computed, ref, useTemplateRef, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 import { useDevice } from '@/shared/setup/Device'
 import Notify from '@/shared/setup/Notify'
 import Cyteria from '@/shared/utils/Cyteria'
 
-import { SkillBuild } from '@/lib/Character/SkillBuild'
+import { SkillBuild, encodeSkillBuild } from '@/lib/Character/SkillBuild'
 import { getSkillBuildImageDataURL, getSkillBuildText } from '@/lib/Character/SkillBuild/utils'
 
 import FloatPage from '@/components/app-layout/float-page/float-page.vue'
+import { CharacterSimulatorRouteNames } from '@/router/Character'
 
 interface Props {
   skillBuild: SkillBuild
@@ -19,12 +21,14 @@ const props = defineProps<Props>()
 const { t } = useI18n()
 const { notify } = Notify()
 const { device } = useDevice()
+const router = useRouter()
 
 const visible = ref(false)
 
 const enum ExportMode {
   Text,
   Image,
+  Share,
 }
 
 const currentExportMode = ref<ExportMode>(ExportMode.Text)
@@ -62,6 +66,21 @@ const downloadImage = () => {
     fileName: props.skillBuild.name + '.png',
   })
 }
+
+const shareUrl = computed(() => {
+  const encoded = encodeSkillBuild(props.skillBuild)
+  const resolved = router.resolve({
+    name: CharacterSimulatorRouteNames.Skill,
+    query: { build: encoded },
+  })
+  return window.location.origin + resolved.href
+})
+
+const copyShareUrl = () => {
+  if (Cyteria.copyToClipboard(shareUrl.value)) {
+    notify(t('app.features.copy-to-clipboard-success-tips'))
+  }
+}
 </script>
 
 <template>
@@ -83,6 +102,9 @@ const downloadImage = () => {
           <cy-tab :value="ExportMode.Image">
             {{ t('character-simulator.skill-build.export-image') }}
           </cy-tab>
+          <cy-tab :value="ExportMode.Share">
+            {{ t('character-simulator.skill-build.share-url-tab') }}
+          </cy-tab>
         </cy-tabs>
         <div
           v-if="currentExportMode === ExportMode.Text"
@@ -95,6 +117,22 @@ const downloadImage = () => {
             </div>
           </div>
           <div ref="eportedTextContent" v-html="exportedText" />
+        </div>
+        <div
+          v-if="currentExportMode === ExportMode.Share"
+          :class="device.isWide ? 'grow overflow-y-auto' : 'pb-6'"
+        >
+          <div class="mb-4 flex">
+            <cy-button-circle icon="mdi:content-copy" small @click="copyShareUrl" />
+            <div class="flex min-h-full items-center px-4 text-sm text-primary-50">
+              {{ t('character-simulator.skill-build.share-url-copy') }}
+            </div>
+          </div>
+          <input
+            readonly
+            :value="shareUrl"
+            class="w-full select-all rounded border border-primary-20 bg-primary-5 px-3 py-2 text-sm text-primary-60 outline-none"
+          />
         </div>
         <div
           v-if="currentExportMode === ExportMode.Image"

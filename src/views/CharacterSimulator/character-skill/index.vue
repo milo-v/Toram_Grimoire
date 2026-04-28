@@ -1,11 +1,15 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia'
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 
 import { useCharacterStore } from '@/stores/views/character'
 import { useCharacterSkillBuildStore } from '@/stores/views/character/skill-build'
 
+import Notify from '@/shared/setup/Notify'
+
+import { SkillBuild, decodeSkillBuild } from '@/lib/Character/SkillBuild'
 import { SkillTypes } from '@/lib/Skill/Skill'
 
 import CommonBuildPage from '../common/common-build-page.vue'
@@ -17,6 +21,9 @@ defineOptions({
 })
 
 const { t } = useI18n()
+const route = useRoute()
+const router = useRouter()
+const { notify } = Notify()
 
 const currentTab = ref(2)
 
@@ -42,6 +49,23 @@ const removeSkillBuild = () => {
   const idx = skillStore.removeSkillBuild(selectedBuild.value)
   selectedBuild.value = skillBuilds.value[idx]
 }
+
+onMounted(() => {
+  const encoded = route.query.build
+  if (typeof encoded !== 'string') {
+    return
+  }
+  router.replace({ query: {} })
+  const data = decodeSkillBuild(encoded)
+  if (!data) {
+    notify(t('character-simulator.skill-build.share-url-load-failed'))
+    return
+  }
+  const build = SkillBuild.load(null, data)
+  skillStore.appendSkillBuild(build, false)
+  selectedBuild.value = build
+  notify(t('character-simulator.skill-build.share-url-loaded'))
+})
 </script>
 
 <template>
