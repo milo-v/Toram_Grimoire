@@ -8,9 +8,12 @@ import { useCharacterStore } from '@/stores/views/character'
 import { useCharacterSkillBuildStore } from '@/stores/views/character/skill-build'
 
 import Notify from '@/shared/setup/Notify'
+import Cyteria from '@/shared/utils/Cyteria'
 
-import { SkillBuild, decodeSkillBuild } from '@/lib/Character/SkillBuild'
+import { SkillBuild, decodeSkillBuild, encodeSkillBuild } from '@/lib/Character/SkillBuild'
 import { SkillTypes } from '@/lib/Skill/Skill'
+
+import { CharacterSimulatorRouteNames } from '@/router/Character'
 
 import CommonBuildPage from '../common/common-build-page.vue'
 import CharacterSkillPreviewTab from './character-skill-preview-tab/character-skill-preview-tab.vue'
@@ -40,6 +43,21 @@ const currentDisplayedTab = computed(() => (buildMatched.value ? currentTab.valu
 
 const addSkillBuild = () => {
   selectedBuild.value = skillStore.createSkillBuild()
+}
+
+const shareUrl = computed(() => {
+  const encoded = encodeSkillBuild(selectedBuild.value!)
+  const resolved = router.resolve({
+    name: CharacterSimulatorRouteNames.Skill,
+    query: { build: encoded },
+  })
+  return window.location.origin + resolved.href
+})
+
+const copyShareUrl = () => {
+  if (Cyteria.copyToClipboard(shareUrl.value)) {
+    notify(t('character-simulator.skill-build.share-url-copied'))
+  }
 }
 
 const removeSkillBuild = () => {
@@ -80,6 +98,11 @@ onMounted(() => {
     @remove-build="removeSkillBuild"
   >
     <template #content>
+      <div class="mb-1">
+        <cy-button-action icon="mdi:link-variant" @click="copyShareUrl">
+          {{ t('character-simulator.skill-build.share-url-button') }}
+        </cy-button-action>
+      </div>
       <cy-tabs :model-value="currentDisplayedTab" @update:model-value="currentTab = $event">
         <cy-tab :value="0" :disabled="!buildMatched">
           {{ t('character-simulator.skill-build.active-skills') }}
