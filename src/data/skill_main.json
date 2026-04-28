@@ -7,7 +7,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H3 SR H SR H SR H S L2 E DRB SR H SRB H SR H5 S L SR DB E2 DR H3 SR H S L E DR SR H SRB H S L E4 DR H3 SR H S L SR H SRB H S L E2 DR H3 SR H SR H S L2 E6 S"
   },
   {
     "type": "",
@@ -180,7 +181,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E6 DRB H3 S L E2 DRB H3 SR H5 S L E2 V E6 DRB S L SR DRB SR H SR H3 SR DBR H2 S L E V E7 DR S L E DR SR H SR H SR H SRB H3 S L E8 DR H S L SRB H3 SR H SR H SR H3 S L DRB H9 S L DR H SR H5 S L E6 S"
   },
   {
     "type": "",
@@ -360,7 +362,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H SR H SRB H S L SR DB E6 DR H3 S L E DR SR H SR H SRB DR SR H S L E6 DR H5 S L SR H3 SR H SR H S L2 SR H3 SR H SR H SR DRB S L E9 V L E6 S E2 DR S"
   },
   {
     "type": "",
@@ -533,7 +536,8 @@
   {
     "type": "1",
     "id": 3,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E8 DRB H3 S L E DRB SR H SR H SR H SR H S L SR DB E2 DRB H7 S L E DR SR H SR H SRB H SRB H S L E6 V E DR H3 S L E6 DR H3 S L SR H5 SR H SR H3 S L2 SR H3 S L E6 S"
   },
   {
     "type": "",
@@ -692,7 +696,8 @@
   {
     "type": "1",
     "id": 4,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E4 DRB H5 S L SR DRB SR H SR H S L E V E7 DRB S L E DRB SR H SR H SR H SR DB L E V E7 DR S L E DRB SR H3 SR H S L E V L E DR SR H SRB H3 SR H S L E4 V E3 DRB H3 S L E4 DR H3 SR H S"
   },
   {
     "type": "",
@@ -844,7 +849,8 @@
   {
     "type": "1",
     "id": 5,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E4 DRB H3 SR H S L SR DRB SR H SR H S L E V L E DR SRB H3 SR H SR H S L E2 V L E2 DR H SR H SR H SR H S L2 SR H5 SR H3 S L2 SR H3 SR H3 SR H S L E6 S"
   },
   {
     "type": "",
@@ -1003,7 +1009,8 @@
   {
     "type": "1",
     "id": 6,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR DRB SR H S L E7 V L SR H3 SR H S DR SR H S L2 SR DRB H4 SR H3 S L E V L E DR SR H SRB H3 SR H S L E4 V L E4 SR H SR H SR H S L2 E6 S"
   },
   {
     "type": "",
@@ -1169,7 +1176,8 @@
   {
     "type": "1",
     "id": 7,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H S L2 SR DRB SR H3 S L E V L E DR SR H SR H S"
   },
   {
     "type": "",
@@ -1244,7 +1252,8 @@
   {
     "type": "1",
     "id": 8,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E5 DRB S L E3 DRB SR D L E DRB SR DB E DRB SR H S L SR DB E DR SR DB L E DR SR DB E DR S L E3 DR SR DB L E5 DR SR H S L L SR H SR H SR H SR H S L"
   },
   {
     "type": "",
@@ -1373,7 +1382,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "DRB H3 S L SR H S L2 SRB H S L DR H3 S"
   },
   {
     "type": "",
@@ -1420,7 +1430,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H S L E V L SR DRB SR H S L E V L E DR SR H SR H SR H S L2 SR H SR H3 S"
   },
   {
     "type": "",
@@ -1516,7 +1527,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H S L SR DB L E DR SR H S L2 SR H SR DRB H2 S L E3 V L E3 DR SR H S"
   },
   {
     "type": "",
@@ -1598,7 +1610,8 @@
   {
     "type": "1",
     "id": 3,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR H S L2 SR H SRB H SR H SR H S L E2 V L E2 SR H S L SR H5 SR H S"
   },
   {
     "type": "",
@@ -1708,7 +1721,8 @@
   {
     "type": "1",
     "id": 4,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR H S L2 SR H SR H SR H SR H S L2 E3 DRB SR H S L SR H SR DB L E3 DR SR H SR H S"
   },
   {
     "type": "",
@@ -1832,7 +1846,8 @@
   {
     "type": "1",
     "id": 5,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR H S L2 SR H SRB H SR H SR H S L E2 V L S E SR H SR H SR H S"
   },
   {
     "type": "",
@@ -1942,7 +1957,8 @@
   {
     "type": "1",
     "id": 6,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E2 DRB H3 S L SR H SR H SR H3 S L2 SR H SR H SR H SR H S L2 SR H SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2052,7 +2068,8 @@
   {
     "type": "1",
     "id": 7,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "DRB H3 S L V L SRB H3 SR H SR H SR H S L V L DR H SR DRB H2 SR H SR H S L E3 V L S E2 DR SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2167,7 +2184,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E2 SR H SR H SR H S L S L E2 SR H SR H SR H S L2 E2 SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2263,7 +2281,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR H S L2 SR H SR H SR H SR H S L2 SR H SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2373,7 +2392,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E3 DRB S L S E2 V L E2 SR DR S L S L E2 SR DRB S L S E2 V L E3 DR S"
   },
   {
     "type": "",
@@ -2446,7 +2466,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H SR H SR H S E S L E V L SR DRB H H SR H SR H S E3 S L E V L E H SR DRB SR H3 S E3 S L E3 V L S E2 DR SR H SR H SR H S E S L2 E12 S L2 E12 S"
   },
   {
     "type": "",
@@ -2612,7 +2633,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H SR H SR H S L E V L SR DRB H2 SR H SR H SR H S L E V L S DR H2 SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2722,7 +2744,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR DBR SR H S L E V L E DBR SR H S L E V L E DR SR H S"
   },
   {
     "type": "",
@@ -2781,7 +2804,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H S L2 SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2842,7 +2866,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H SR H SR H S L2 SR H SR H SR H SR H S L2 SR H SR H SR H SR H S"
   },
   {
     "type": "",
@@ -2952,7 +2977,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR DRB SR H SR H S L E V L E DR S L E4 SR H S"
   },
   {
     "type": "",
@@ -3006,7 +3032,8 @@
   {
     "type": "1",
     "id": 3,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E3 DRB H2 S L E3 V L SR DRB SR DR H2 S L E V L E DR SR H S L2 E4 S"
   },
   {
     "type": "",
@@ -3060,7 +3087,8 @@
   {
     "type": "1",
     "id": 4,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "S DRB SR H S L E V E4 S L SRB DRB SR H S L V V L V DR SR H SR H S L V L DR H3 SR H S"
   },
   {
     "type": "",
@@ -3149,7 +3177,8 @@
   {
     "type": "1",
     "id": 5,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR DRB S L E V L E DR H2 SR H S"
   },
   {
     "type": "",
@@ -3182,7 +3211,8 @@
   {
     "type": "1",
     "id": 6,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SR H SR H S L2 E4 S L2 SR H SR H S L2 SR H S"
   },
   {
     "type": "",
@@ -3250,7 +3280,8 @@
   {
     "type": "1",
     "id": 7,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H SR H S L E V L SR DRB H2 SR H S L E V L E DR SR H SR H S L2 SR H3 SR H S"
   },
   {
     "type": "",
@@ -3339,7 +3370,8 @@
   {
     "type": "1",
     "id": 8,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "E DRB SR H S L E V L SR DRB SR H S L E V L E DR SR H S L2 E DRB SR H S L SR D"
   },
   {
     "type": "",
@@ -3419,7 +3451,8 @@
   {
     "type": "1",
     "id": 0,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "S E S E S E S L2 S E S E S"
   },
   {
     "type": "",
@@ -3473,7 +3506,8 @@
   {
     "type": "1",
     "id": 1,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SRB H SRB H SRB H SRB H SB L V E V E V E V E V L SRB H SRB H SRB H SRB H SB L V E V E V E V E V L SRB H SRB H SRB H SRB H SB L V E V E V E V E V L SRB H SRB H SRB H SRB H SB L V E V E V E V E V L SR H SR H SR H SR H S L V E V E V E V E V L"
   },
   {
     "type": "",
@@ -3653,7 +3687,8 @@
   {
     "type": "1",
     "id": 2,
-    "name": ""
+    "name": "",
+    "drawTreeCode": "SB E SB E SB E SB E S L V E V E V E V L S E S E S E S L2 S E S E S"
   },
   {
     "type": "",

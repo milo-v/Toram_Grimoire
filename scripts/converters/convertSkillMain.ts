@@ -14,8 +14,10 @@ export function convertSkillMain(csv: CsvData): SkillMainData {
     const id = parseInt(row[1])
     if (isNaN(id)) return
 
-    if (type === CATEGORY_CHECK || type === TREE_CHECK) {
+    if (type === CATEGORY_CHECK) {
       result.push({ type, id, name: '' })
+    } else if (type === TREE_CHECK) {
+      result.push({ type, id, name: '', drawTreeCode: row[3] ?? '' })
     } else {
       // skill row
       const previousSkill = row[2] === '-' ? -1 : parseInt(row[2])
